@@ -1,0 +1,66 @@
+booking_ref,scv_household_id,canonical_product_id,raw_entered_hotel_text,owning_department,booking_status,booking_created_date,departure_date,deferral_months_shifted,total_package_gbp,expected_margin_gbp,fx_sunny_spend_attached
+HT-884120,SCV-HH-84920,PRD-B629C,Riu Palace Adeje Costa (TUI Extranet),Branch_Sales,At_Risk_Cancellation,2026-08-14,2026-11-18,0,6450.0,1406.1,False
+HT-884105,SCV-HH-84905,PRD-IONA-711,P&O IONA FJords Cab B410,Finance_iBOS,Deferred_Audit_Flag,2026-07-02,2027-09-15,12,5200.0,852.8,True
+HT-884112,SCV-HH-84912,PRD-JET2-109,Athena Bch Htl Paphos Jet2,Finance_iBOS,Deferred_Audit_Flag,2026-07-19,2027-10-04,12,3890.0,427.9,False
+HT-884119,SCV-HH-84919,PRD-VISTA-808,Singapore + Bali Twin Ctr Vista,Finance_iBOS,Deferred_Audit_Flag,2026-08-01,2027-11-12,12,9400.0,2199.6,True
+HT-884125,SCV-HH-84925,PRD-VISTA-901,Royal Clipper Barbados Vista Stay,Vista_Desk,Vista_Ticketing,2026-08-20,2026-12-05,0,8200.0,1984.4,True
+HT-884130,SCV-HH-84930,PRD-VISTA-402,Sol Principe Torremolinos Htl,Contact_Centre,Quote_Open,2026-09-18,2026-10-24,0,2950.0,575.25,False
+HT-884135,SCV-HH-84935,PRD-EZJ-204,Ikos Olivia Halkidiki Easyjet,Branch_Sales,Confirmed_DD,2026-09-05,2027-05-14,0,5600.0,571.2,True
+HT-884140,SCV-HH-84940,PRD-B629C,Arvia Canary Islands B629C + Riu,Vista_Desk,Confirmed_DD,2026-09-10,2026-11-18,0,6800.0,1482.4,True
+HT-884149,SCV-HH-84949,PRD-CAT-308,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-09-10,2026-10-20,0,8189.66,958.19,False
+HT-884150,SCV-HH-84950,PRD-CAT-309,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-09-17,2026-11-15,0,8226.57,1390.29,True
+HT-884151,SCV-HH-84951,PRD-CAT-310,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-06-22,2026-10-25,0,4046.01,760.65,False
+HT-884152,SCV-HH-84952,PRD-CAT-311,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-09-21,2026-11-17,0,4049.63,453.56,False
+HT-884153,SCV-HH-84953,PRD-CAT-312,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-07-22,2026-11-18,0,8796.21,932.4,True
+HT-884154,SCV-HH-84954,PRD-CAT-313,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-08-21,2026-12-26,0,5357.62,583.98,False
+HT-884155,SCV-HH-84955,PRD-CAT-314,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-08-10,2026-10-18,0,3721.4,666.13,False
+HT-884156,SCV-HH-84956,PRD-CAT-315,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-08-11,2026-10-23,0,4958.08,892.45,True
+HT-884157,SCV-HH-84957,PRD-CAT-316,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-08-23,2026-12-26,0,3255.78,387.44,False
+HT-884158,SCV-HH-84958,PRD-CAT-317,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-07-18,2026-10-23,0,2412.52,291.91,False
+HT-884159,SCV-HH-84959,PRD-CAT-318,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-07-21,2026-11-12,0,9421.67,1055.23,True
+HT-884160,SCV-HH-84960,PRD-CAT-319,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-08-20,2026-12-13,0,7726.18,1298.0,False
+HT-884161,SCV-HH-84961,PRD-CAT-320,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-08-26,2026-11-23,0,4813.75,909.8,False
+HT-884162,SCV-HH-84962,PRD-CAT-321,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-08-27,2026-10-16,0,5511.3,573.18,True
+HT-884163,SCV-HH-84963,PRD-CAT-322,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-09-15,2026-12-28,0,4627.03,522.85,False
+HT-884164,SCV-HH-84964,PRD-CAT-323,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-06-19,2026-11-16,0,5581.17,669.74,False
+HT-884165,SCV-HH-84965,PRD-CAT-324,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-08-24,2026-11-24,0,7399.64,1191.34,True
+HT-884166,SCV-HH-84966,PRD-CAT-325,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-09-15,2026-12-12,0,4500.02,958.5,False
+HT-884167,SCV-HH-84967,PRD-CAT-326,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-08-12,2026-10-19,0,4062.34,487.48,False
+HT-884168,SCV-HH-84968,PRD-CAT-327,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-07-14,2026-10-11,0,4211.83,450.67,True
+HT-884169,SCV-HH-84969,PRD-CAT-328,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-09-12,2026-11-23,0,8957.41,1056.97,False
+HT-884170,SCV-HH-84970,PRD-CAT-329,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-07-22,2026-11-22,0,4205.48,752.78,False
+HT-884171,SCV-HH-84971,PRD-CAT-330,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-06-13,2026-11-17,0,3701.56,858.76,True
+HT-884172,SCV-HH-84972,PRD-CAT-331,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-09-11,2026-12-17,0,9189.28,918.93,False
+HT-884173,SCV-HH-84973,PRD-CAT-332,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-06-24,2026-10-24,0,7340.08,741.35,False
+HT-884174,SCV-HH-84974,PRD-CAT-333,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-08-24,2026-12-26,0,5557.88,616.92,True
+HT-884175,SCV-HH-84975,PRD-CAT-334,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-09-15,2026-12-25,0,5730.52,951.27,False
+HT-884176,SCV-HH-84976,PRD-CAT-335,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-07-18,2026-12-25,0,7037.94,1569.46,False
+HT-884177,SCV-HH-84977,PRD-CAT-336,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-08-24,2026-10-19,0,4135.25,454.88,True
+HT-884178,SCV-HH-84978,PRD-CAT-337,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-08-20,2026-12-12,0,3423.97,386.91,False
+HT-884179,SCV-HH-84979,PRD-CAT-338,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-07-22,2026-12-14,0,7627.5,747.5,False
+HT-884180,SCV-HH-84980,PRD-CAT-339,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-06-23,2026-11-20,0,6415.32,1148.34,True
+HT-884181,SCV-HH-84981,PRD-CAT-340,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-09-11,2026-10-23,0,5282.13,1088.12,False
+HT-884182,SCV-HH-84982,PRD-CAT-341,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-06-28,2026-11-25,0,2443.63,239.48,False
+HT-884183,SCV-HH-84983,PRD-CAT-342,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-08-19,2026-11-23,0,6382.83,765.94,True
+HT-884184,SCV-HH-84984,PRD-CAT-343,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-07-25,2026-10-18,0,5625.19,601.9,False
+HT-884185,SCV-HH-84985,PRD-CAT-344,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-06-22,2026-11-22,0,7758.94,1156.08,False
+HT-884186,SCV-HH-84986,PRD-CAT-345,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-09-14,2026-12-27,0,2599.55,618.69,True
+HT-884187,SCV-HH-84987,PRD-CAT-346,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-09-28,2026-12-10,0,3021.21,311.18,False
+HT-884188,SCV-HH-84988,PRD-CAT-347,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-09-14,2026-11-15,0,2772.11,277.21,False
+HT-884189,SCV-HH-84989,PRD-CAT-348,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-09-20,2026-10-24,0,4818.66,558.96,True
+HT-884190,SCV-HH-84990,PRD-CAT-349,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-09-18,2026-11-18,0,8578.34,1535.52,False
+HT-884191,SCV-HH-84991,PRD-B629C,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-09-10,2026-12-27,0,2785.43,607.22,False
+HT-884192,SCV-HH-84992,PRD-RIU-001,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-08-17,2026-12-12,0,8181.12,859.02,True
+HT-884193,SCV-HH-84993,PRD-IONA-711,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-06-10,2026-10-16,0,8610.29,1412.09,False
+HT-884194,SCV-HH-84994,PRD-VISTA-402,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-07-17,2026-10-25,0,7354.0,1434.03,False
+HT-884195,SCV-HH-84995,PRD-JET2-109,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-07-24,2026-12-18,0,8075.05,888.26,True
+HT-884196,SCV-HH-84920,PRD-VISTA-808,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-07-13,2026-10-19,0,3199.93,748.78,False
+HT-884197,SCV-HH-84905,PRD-EZJ-204,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-06-19,2026-12-22,0,5335.24,544.19,False
+HT-884198,SCV-HH-84912,PRD-VISTA-901,RIU PALACE TENERIFE (COSTA ADEJE),Vista_Desk,Quote_Open,2026-07-12,2026-12-17,0,3154.07,763.28,True
+HT-884199,SCV-HH-84919,PRD-CAT-308,Lopesan Meloneras Resort GranCanaria,Contact_Centre,Vista_Ticketing,2026-08-13,2026-12-11,0,4969.31,581.41,False
+HT-884200,SCV-HH-84925,PRD-CAT-309,Sol Principe Torremolinos Malaga,Finance_iBOS,At_Risk_Cancellation,2026-09-21,2026-10-26,0,7191.82,1215.42,False
+HT-884201,SCV-HH-84930,PRD-CAT-310,Athena Beach Hotel Paphos Cyprus,Branch_Sales,Confirmed_DD,2026-06-23,2026-11-13,0,5608.07,1054.32,True
+HT-884202,SCV-HH-84935,PRD-CAT-311,P&O Arvia Canary Cruise B629C,Vista_Desk,Quote_Open,2026-08-24,2026-12-14,0,5622.6,629.73,False
+HT-884203,SCV-HH-84940,PRD-CAT-312,Iberostar Anthelia Costa Adeje,Contact_Centre,Vista_Ticketing,2026-08-27,2026-11-24,0,5623.25,596.06,False
+HT-884204,SCV-HH-84949,PRD-CAT-313,Princess Andriana Rhodes All Inc,Finance_iBOS,At_Risk_Cancellation,2026-08-20,2026-10-12,0,4464.07,486.58,True
+HT-884205,SCV-HH-84950,PRD-CAT-314,Htl Riu Palace Tenerife - Adeje,Branch_Sales,Confirmed_DD,2026-09-17,2026-11-28,0,6916.45,1238.04,False

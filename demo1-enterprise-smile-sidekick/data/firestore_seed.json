@@ -1,0 +1,148 @@
+[
+  {
+    "id": "TSK-HT-6291",
+    "data": {
+      "task_id": "TSK-HT-6291",
+      "title": "Henderson Family (HT-884120) \u2014 Extranet MDM Canonicalization & Vista B629C Margin Upgrade",
+      "booking_ref": "HT-884120",
+      "scv_household_id": "SCV-HH-84920",
+      "task_type": "Vista_Package_Approval",
+      "current_department": "Branch_Sales",
+      "next_department": "Vista_Desk",
+      "status": "Pending_Approval",
+      "priority": "Critical",
+      "summary": "Walk-in consultation at Maidenhead Branch (MAID-042). Customer holds at-risk TUI quote (10.5% margin, DD Retry_Pending). Upgrade to Vista Cruise-and-Stay (P&O Arvia Voyage B629C + Riu Palace Tenerife, 21.8% margin = \u00a31,406.10) and map free-text hotel string to Google Places ID ChIJN1t_tDeuEmsRUsoyG83frY4.",
+      "history": [
+        {
+          "timestamp": "2026-09-30T09:15:00Z",
+          "actor": "SMILE Sidekick Agent",
+          "action": "Merged 4 duplicate iSell profiles into SCV-HH-84920 and flagged 0.74 Cancellation Risk.",
+          "approver": "",
+          "evidence_ids": [
+            "SCV-HH-84920",
+            "HT-884120"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T09:22:00Z",
+          "actor": "Rachel (Maidenhead Branch Manager)",
+          "action": "Scanned DOC-MAID-8841 confirmation sheet; requested Vista Cruise-and-Stay B629C package assembly.",
+          "approver": "Rachel (MAID-042)",
+          "evidence_ids": [
+            "DOC-MAID-8841",
+            "PRD-B629C"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-HT-6292",
+    "data": {
+      "task_id": "TSK-HT-6292",
+      "title": "Audit Genie Alert \u2014 +12 Month Artificial Departure Deferral (HT-884105, HT-884112, HT-884119)",
+      "booking_ref": "HT-884105",
+      "scv_household_id": "SCV-HH-84905",
+      "task_type": "Audit_Genie_Review",
+      "current_department": "Finance_iBOS",
+      "next_department": "Branch_Sales",
+      "status": "Pending_Approval",
+      "priority": "Critical",
+      "summary": "Databricks Audit Genie detected 3 branch bookings shifted forward by exactly 12 months instead of cancellation processing to protect monthly branch bonus thresholds (\u00a318,490 combined TTV).",
+      "history": [
+        {
+          "timestamp": "2026-09-30T08:00:00Z",
+          "actor": "Databricks Audit Genie",
+          "action": "Flagged deferral_months_shifted = 12 with Default_Risk Direct Debit status.",
+          "approver": "",
+          "evidence_ids": [
+            "HT-884105",
+            "HT-884112",
+            "HT-884119"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-HT-6293",
+    "data": {
+      "task_id": "TSK-HT-6293",
+      "title": "PTC Lead Support O2O Handover \u2014 O'Connor Family Splash Park Quote (HT-884130)",
+      "booking_ref": "HT-884130",
+      "scv_household_id": "SCV-HH-84930",
+      "task_type": "Save_The_Booking",
+      "current_department": "Contact_Centre",
+      "next_department": "Branch_Sales",
+      "status": "In_Progress",
+      "priority": "High",
+      "summary": "GTM Web Concierge captured warm family of 4 inquiry (Torremolinos soft-sand beach + splash park under \u00a33,000, Vista 19.5% margin) after Holiday Webtech 8k-hotel widget failure.",
+      "history": [
+        {
+          "timestamp": "2026-09-30T10:05:00Z",
+          "actor": "GECX Web Concierge",
+          "action": "Generated O2O Lead Token and routed session summary to PTC Lead Support.",
+          "approver": "Hannah Brooks (CC Lead)",
+          "evidence_ids": [
+            "HT-884130",
+            "PRD-VISTA-402"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-HT-6294",
+    "data": {
+      "task_id": "TSK-HT-6294",
+      "title": "Hotel MDM Deduplication Batch \u2014 189 Riu Palace Tenerife Free-Text Strings",
+      "booking_ref": "HT-884120",
+      "scv_household_id": "SCV-HH-84920",
+      "task_type": "MDM_PlaceID_Canonicalization",
+      "current_department": "Branch_Sales",
+      "next_department": "Finance_iBOS",
+      "status": "Pending_Approval",
+      "priority": "High",
+      "summary": "Attended Chrome Sidepanel matched 189 raw Traveltek iSell hotel text strings to canonical Google Places ID ChIJP3Sa8ziYEmsRUKgyFmh9AQM.",
+      "history": [
+        {
+          "timestamp": "2026-09-30T10:30:00Z",
+          "actor": "Chrome Sidepanel MDM Engine",
+          "action": "Resolved supplier extranet DOM hotel name to canonical_product_id PRD-B629C.",
+          "approver": "",
+          "evidence_ids": [
+            "PRD-B629C",
+            "PRD-RIU-001"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-HT-6295",
+    "data": {
+      "task_id": "TSK-HT-6295",
+      "title": "Vista Ticketing & ATOL Certificate Issuance \u2014 Barbados & Royal Clipper (HT-884125)",
+      "booking_ref": "HT-884125",
+      "scv_household_id": "SCV-HH-84925",
+      "task_type": "Vista_Package_Approval",
+      "current_department": "Vista_Desk",
+      "next_department": "Finance_iBOS",
+      "status": "Completed",
+      "priority": "Medium",
+      "summary": "Automated Travelport GDS fare hold and Bedbank room allocation completed in 95 seconds (eliminating 1-hour Vista desk hold time). Gross margin: 24.2% (\u00a31,984.40).",
+      "history": [
+        {
+          "timestamp": "2026-09-29T15:40:00Z",
+          "actor": "SMILE Sidekick Agent",
+          "action": "Issued ATOL certificate and attached Sunny Spend FX card.",
+          "approver": "Vista Specialist Desk",
+          "evidence_ids": [
+            "HT-884125",
+            "PRD-VISTA-901"
+          ]
+        }
+      ]
+    }
+  }
+]

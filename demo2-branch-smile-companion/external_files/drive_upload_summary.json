@@ -1,0 +1,36 @@
+{
+  "owner_account": "",
+  "target_account": "branch.manager@example.com",
+  "upload_skipped_reason": "SKIP_DRIVE_UPLOAD is set",
+  "shared_permissions": [],
+  "share_error": "",
+  "folder_name": "GE Demo - Hays Travel Branch (7412)",
+  "folder_id": "",
+  "folder_url": "",
+  "uploaded_files": [
+    {
+      "fileName": "haysbranch_audit_report.pdf",
+      "fileId": "",
+      "url": "file:///usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_audit_report.pdf",
+      "localPath": "/usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_audit_report.pdf"
+    },
+    {
+      "fileName": "haysbranch_external_ledger.xlsx",
+      "fileId": "",
+      "url": "file:///usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_external_ledger.xlsx",
+      "localPath": "/usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_external_ledger.xlsx"
+    },
+    {
+      "fileName": "haysbranch_simulated_order_task1.jpg",
+      "fileId": "",
+      "url": "file:///usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_simulated_order_task1.jpg",
+      "localPath": "/usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_simulated_order_task1.jpg"
+    },
+    {
+      "fileName": "haysbranch_simulated_order_task2_discrepancy.jpg",
+      "fileId": "",
+      "url": "file:///usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_simulated_order_task2_discrepancy.jpg",
+      "localPath": "/usr/local/google/home/merdogdu/.gemini/jetski/brain/f00ad7e4-2cb6-4ddf-a33f-747c97b2a90a/scratch/ge-demo-haysbranch-7412/external_files/haysbranch_simulated_order_task2_discrepancy.jpg"
+    }
+  ]
+}

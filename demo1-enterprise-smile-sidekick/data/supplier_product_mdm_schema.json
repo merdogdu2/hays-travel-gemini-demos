@@ -1,0 +1,56 @@
+[
+  {
+    "name": "canonical_product_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key. Master product, resort, or cruise voyage identifier (e.g. PRD-B629C)."
+  },
+  {
+    "name": "google_place_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Canonical Google Places API place_id used to deduplicate the 292,000 raw hotel strings in Databricks Silver."
+  },
+  {
+    "name": "raw_isell_string_variants",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Number of unmapped free-text hotel string variations in Traveltek iSell resolved to this canonical entity."
+  },
+  {
+    "name": "canonical_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Verified canonical resort or cruise ship + voyage name."
+  },
+  {
+    "name": "supplier_channel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Supplier channel: Vista_InHouse (15-25% margin), PO_Cruises, Jet2holidays, easyJet, or TUI."
+  },
+  {
+    "name": "product_category",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Package category: Cruise_And_Stay, Ocean_Cruise, Short_Haul_Beach, or Long_Haul_MultiCentre."
+  },
+  {
+    "name": "gross_margin_pct",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Gross margin or agency commission percentage (e.g. 21.8% for Vista vs 10.5% for 3rd-party suppliers)."
+  },
+  {
+    "name": "min_margin_threshold_pct",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Board '1/3 Mix' Mandate minimum target margin percentage for this product category."
+  },
+  {
+    "name": "verified_attributes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Pipe-delimited verified property/cabin attributes from Oak Intranet & Traveltek Cruise JSON API (e.g. Scooter_90cm_Door, Soft_Sand_Beach)."
+  }
+]

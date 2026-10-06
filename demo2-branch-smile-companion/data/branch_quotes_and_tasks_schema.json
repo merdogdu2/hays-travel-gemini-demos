@@ -1,0 +1,74 @@
+[
+  {
+    "name": "quote_ref",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key: Branch Quote or Booking Reference (e.g., QT-MAID-901 for Hendersons, QT-MAID-902 for Millers)."
+  },
+  {
+    "name": "customer_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Foreign Key to branch_customers.customer_id."
+  },
+  {
+    "name": "package_code",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Foreign Key to holiday_cruise_catalog.package_code."
+  },
+  {
+    "name": "branch_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Retail branch name (Maidenhead)."
+  },
+  {
+    "name": "consultant_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Branch consultant handling the customer (Rachel, Chloe, Sam)."
+  },
+  {
+    "name": "supplier_booking_ref",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "External supplier booking reference from Jet2, P&O CCS, easyJet, or Vista."
+  },
+  {
+    "name": "rekey_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Status of iSell entry: Pending_Screenshot_AutoFill, Auto_Filled_In_iSell, Quote_Sent_48Hr_FollowUp_Due."
+  },
+  {
+    "name": "flight_and_hotel_summary",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Summary of flights, cabin/room grade, and hotel name."
+  },
+  {
+    "name": "total_price_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Total holiday package price in GBP (\u00a3)."
+  },
+  {
+    "name": "branch_commission_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Commission earned by the branch in GBP (\u00a3)."
+  },
+  {
+    "name": "ancillaries_attached",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Holiday Extras (parking/lounge) and Sunny Spend FX card status."
+  },
+  {
+    "name": "next_branch_action",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Recommended next step for the branch consultant."
+  }
+]

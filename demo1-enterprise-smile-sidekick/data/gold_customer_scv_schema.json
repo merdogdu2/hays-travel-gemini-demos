@@ -1,0 +1,56 @@
+[
+  {
+    "name": "scv_household_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key. Unified Databricks Gold Household ID resolving 3-5 duplicate Traveltek iSell profiles (e.g. SCV-HH-84920)."
+  },
+  {
+    "name": "primary_customer_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Resolved lead passenger household name."
+  },
+  {
+    "name": "isell_duplicate_count",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Count of fragmented Traveltek iSell customer profiles merged into this household record."
+  },
+  {
+    "name": "experian_mosaic_tier",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Experian Mosaic UK demographic classification (90% household match across Hays Travel)."
+  },
+  {
+    "name": "home_branch_code",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Primary retail branch or Contact Centre unit code (e.g. MAID-042 for Maidenhead, PTCLS-01, CRUI-CC1)."
+  },
+  {
+    "name": "lifetime_value_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "10-year cumulative household Total Transaction Value (TTV) in GBP."
+  },
+  {
+    "name": "cancellation_risk_score",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Databricks ML Cancellation Propensity score (0.00 to 1.00) targeting the 5.92% (\u00a359M GBV) cancellation pool."
+  },
+  {
+    "name": "direct_debit_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Azure SQL Direct Debit status (Active, Paid_Full, Retry_Pending, Default_Risk). Covers 28% of bookings."
+  },
+  {
+    "name": "zero_deposit_segment",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "5-year Causal Inference study classification (Net_Incremental, Standard, High_Default_Risk)."
+  }
+]

@@ -1,0 +1,1 @@
+One row per canonical resort, cruise voyage (Traveltek Cruise JSON API), or Vista dynamic package, mapping the 292,000 duplicate iSell free-text hotel strings to a verified Google Places ID and Board margin target. Rows: 50. Coverage: no date column

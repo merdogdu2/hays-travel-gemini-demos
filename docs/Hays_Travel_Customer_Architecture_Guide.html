@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hays Travel — Gemini Enterprise & A2UI v0.9 Architectural Guide</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased p-6">
+  <div class="max-w-6xl mx-auto space-y-6">
+
+    <!-- Header Banner -->
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]">
+            <span>HAYS TRAVEL × GOOGLE CLOUD</span>
+            <span>•</span>
+            <span>GEMINI ENTERPRISE + A2UI v0.9</span>
+          </div>
+          <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-[var(--foreground)]">
+            SMILE Sidekick &amp; Vista Margin Booster — Customer Architecture Guide
+          </h1>
+          <p class="text-sm text-[var(--muted-foreground)] max-w-3xl">
+            How Gemini Enterprise connects your <strong>Databricks Unity Catalog Lakehouse</strong>, <strong>iSell Branch POS</strong>, <strong>iBOS Back-Office Finance</strong>, and <strong>Supplier Extranets</strong> into an interactive workspace from <strong>Maidenhead (`MAID-042`)</strong> to <strong>Gilbridge House HQ (Sunderland)</strong>.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://vertexaisearch.cloud.google.com/home/cid/7482972f-a29f-4bfe-ac7a-1efed3c6247f/r/agent/8222496698725446173/session/-" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-90 transition">
+            <span>💬 Launch Live Agent</span>
+          </a>
+          <a href="https://ge-viewer-ge-demo-haystravel-6291-izrmfecp5a-uc.a.run.app" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)] hover:opacity-90 transition">
+            <span>📊 Live Operations Console</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Executive KPI Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-5 border-t border-[var(--border)]">
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">Consultation &amp; Cruise Quote Time</div>
+          <div class="text-lg font-bold mt-0.5">135 min → <span class="text-emerald-500">90 sec</span></div>
+          <div class="text-[11px] text-[var(--muted-foreground)] mt-0.5">P&amp;O Arvia `B629C` + Vista Stay</div>
+        </div>
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">Legacy `iSell` Duplicate Resolution</div>
+          <div class="text-lg font-bold mt-0.5">40+ → <span class="text-emerald-500">1 Gold SCV</span></div>
+          <div class="text-[11px] text-[var(--muted-foreground)] mt-0.5">Hero: Henderson Family (`SCV-HH-84920`)</div>
+        </div>
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">Commission Uplift (Vista vs. 3rd-Party)</div>
+          <div class="text-lg font-bold mt-0.5">10.5% → <span class="text-emerald-500">21.8% (+£678)</span></div>
+          <div class="text-[11px] text-[var(--muted-foreground)] mt-0.5">Plus £150 customer price saving</div>
+        </div>
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">Sunderland HQ Audit Genie</div>
+          <div class="text-lg font-bold mt-0.5">100% Automated</div>
+          <div class="text-[11px] text-[var(--muted-foreground)] mt-0.5">Catches +12M deferrals &amp; 5–15% variances</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex flex-wrap gap-2 bg-[var(--card)] border border-[var(--border)] rounded-xl p-1.5">
+      <button onclick="switchTab('story')" id="tab-btn-story"
+              class="tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition bg-[var(--primary)] text-[var(--primary-foreground)]">
+        1. The Customer Story (Before vs. After)
+      </button>
+      <button onclick="switchTab('arch')" id="tab-btn-arch"
+              class="tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        2. Interactive Architecture Explorer
+      </button>
+      <button onclick="switchTab('data')" id="tab-btn-data"
+              class="tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        3. Data Map &amp; Oliver Grant's 3 Tiers
+      </button>
+      <button onclick="switchTab('playbook')" id="tab-btn-playbook"
+              class="tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+        4. Live 7-Step Storyboard &amp; Prompts
+      </button>
+    </div>
+
+    <!-- TAB 1: THE CUSTOMER STORY -->
+    <div id="tab-story" class="tab-panel space-y-6">
+      <!-- Narrative Arc Card -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-5">
+        <div class="flex items-start justify-between gap-4 flex-wrap">
+          <div>
+            <h2 class="text-xl font-bold">The Narrative: From Maidenhead High Street to Gilbridge House HQ</h2>
+            <p class="text-sm text-[var(--muted-foreground)] mt-1">
+              Grounded in our Maidenhead branch shadowing with <strong>Rachel</strong> and technical discovery with <strong>Sunderland HQ</strong>.
+            </p>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]">
+            Hero Instance: Henderson Family • `SCV-HH-84920` • Voyage `B629C`
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- Legacy Today -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Today: Fragmented Workflow (`iSell` + Portal Swivel-Chair)</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-rose-500/10 text-rose-500">~135 Mins / Quote</span>
+            </div>
+            <ol class="space-y-2.5 text-xs text-[var(--muted-foreground)] list-decimal list-inside">
+              <li><strong class="text-[var(--foreground)]">40+ Unmerged Profiles in `iSell`:</strong> Searching "Henderson" returns 4+ duplicate household profiles with no visibility into lifetime spend (£28.4k) or cancellation risk.</li>
+              <li><strong class="text-[var(--foreground)]">2-Hour Cruise `B629C` Portal Hunt:</strong> Consultant manually cross-checks P&amp;O Complete Cruise Solution, Travelport flights, and Bedsonline hotels across separate browser tabs.</li>
+              <li><strong class="text-[var(--foreground)]">Margin Left on the Table (10.5% vs 21.8%):</strong> Under time pressure, branches book a 3rd-party TUI package (£660 commission) instead of assembling an in-house <strong>Vista Dynamic Package</strong> (£1,338 margin).</li>
+              <li><strong class="text-[var(--foreground)]">Manual Back-Office Audit in `iBOS`:</strong> Sunderland Finance manually hunts 5–15% supplier extranet rate variances and artificial <strong>+12-month departure deferrals</strong> used to delay commission clawbacks.</li>
+            </ol>
+          </div>
+
+          <!-- Future with Gemini Enterprise -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-500">With Gemini Enterprise + A2UI v0.9 (`SMILE Sidekick`)</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-500">~90 Secs / Quote</span>
+            </div>
+            <ol class="space-y-2.5 text-xs text-[var(--muted-foreground)] list-decimal list-inside">
+              <li><strong class="text-[var(--foreground)]">Instant Gold Customer 360 (`SCV-HH-84920`):</strong> Automatically resolves 4 `iSell` duplicates into one household card showing Balcony Deluxe preference, gluten-free notes, and 0.74 churn risk.</li>
+              <li><strong class="text-[var(--foreground)]">One-Click Vista Margin Booster (`PRD-B629C`):</strong> Side-by-side A2UI card proves Vista saves the customer <strong>£150</strong> (£6,140 vs £6,290) while earning Hays Travel <strong>+£678.07 extra commission</strong> (21.8%).</li>
+              <li><strong class="text-[var(--foreground)]">Attended Extranet Vision &amp; MDM:</strong> Scans paper/PDF vouchers (`DOC-MAID-8841`), resolves messy hotel strings (`"HTL RIU PALACE TENERIFE ADEJE"`) to canonical MDM IDs, and updates `iBOS` via an interactive A2UI Batch Editor.</li>
+              <li><strong class="text-[var(--foreground)]">Always-On Audit Genie:</strong> Cross-checks PDF/Excel extranet ledgers against `iBOS` and runs a daily 09:00 AM monitor flagging +12-month departure deferrals (`HT-884105`, `HT-884112`, `HT-884119`).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Vista Margin Uplift Simulator -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <h3 class="text-base font-bold">Interactive Business Case Simulator: Shifting 3rd-Party Bookings to Vista</h3>
+            <p class="text-xs text-[var(--muted-foreground)]">Use this slider live with the customer to model the commercial impact across Hays Travel's ~450 branches.</p>
+          </div>
+          <span class="text-xs font-mono px-2.5 py-1 rounded bg-[var(--background)] border border-[var(--border)]">
+            Benchmark: Hero Booking `HT-884120` (+£678.07 uplift per package)
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center pt-2">
+          <div class="space-y-3 md:col-span-2">
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Bookings Converted from 3rd-Party (10.5%) to Vista (21.8%) per Week Across Network:</span>
+                <span id="sim-bookings-label" class="font-bold text-[var(--foreground)]">250 bookings / week</span>
+              </div>
+              <input id="sim-bookings" type="range" min="50" max="1500" step="25" value="250" oninput="updateSimulator()"
+                     class="w-full accent-emerald-500 cursor-pointer" />
+            </div>
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Average Margin Uplift per Converted Package (£):</span>
+                <span id="sim-uplift-label" class="font-bold text-[var(--foreground)]">£678 / booking</span>
+              </div>
+              <input id="sim-uplift" type="range" min="250" max="1000" step="10" value="678" oninput="updateSimulator()"
+                     class="w-full accent-emerald-500 cursor-pointer" />
+            </div>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 text-center space-y-1">
+            <div class="text-xs text-[var(--muted-foreground)]">Projected Annual Net Margin Uplift</div>
+            <div id="sim-annual-total" class="text-2xl font-extrabold text-emerald-500">£8,814,000 / yr</div>
+            <div id="sim-hours-saved" class="text-[11px] text-[var(--muted-foreground)]">+ 29,250 branch consultant hours saved/yr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: INTERACTIVE ARCHITECTURE EXPLORER -->
+    <div id="tab-arch" class="tab-panel hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-5">
+        <div>
+          <h2 class="text-xl font-bold">Interactive Architecture Explorer — Click Any Component to Inspect Its Role &amp; Data</h2>
+          <p class="text-xs text-[var(--muted-foreground)] mt-1">
+            Click any box in the 3 architectural layers below to show the customer what it represents in Hays Travel's estate and which exact records live inside it.
+          </p>
+        </div>
+
+        <!-- 3-Tier Visual Diagram -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+          <!-- Column 1: Experience & Channels -->
+          <div class="space-y-3 bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">Layer 1: User Experience &amp; A2UI v0.9</div>
+
+            <button onclick="selectArchNode('ge_ui')" id="node-ge_ui"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border-2 border-[var(--primary)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">💬 Gemini Enterprise + A2UI v0.9 UI</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Front-Office</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Interactive cards, tables, Vega charts &amp; human-in-the-loop forms inside `"SMILE"`.
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('ops_viewer')" id="node-ops_viewer"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">📊 Real-Time Operations Console</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Cloud Run + IAP</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Live cross-departmental board connecting Maidenhead (`MAID-042`), Vista Desk &amp; Sunderland HQ.
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('html_dash')" id="node-html_dash"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">📈 Published HTML &amp; Board Decks</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Deliverables</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                On-demand interactive HTML simulators, PowerPoint (`.pptx`) decks &amp; PDF executive briefs.
+              </p>
+            </button>
+          </div>
+
+          <!-- Column 2: Multi-Agent Orchestration -->
+          <div class="space-y-3 bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">Layer 2: ADK Multi-Agent &amp; Sandbox</div>
+
+            <button onclick="selectArchNode('root_agent')" id="node-root_agent"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">🤖 SMILE Sidekick (`root_agent` + `deep_analysis`)</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Gemini 3.8 Flash</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Orchestrates SQL lookups, multimodal document scanning, and A2UI v0.9 card assembly.
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('managed_agent')" id="node-managed_agent"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">🧪 Autonomous Sandbox Specialist</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Agent Engine</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Persistent cloud sandbox (`ge-demo-haystravel-6291-auto`) for web research &amp; multi-file board reports.
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('scheduler')" id="node-scheduler"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">⏰ Background Worker &amp; 09:00 Cron</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Pub/Sub + Tasks</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Runs recurring daily Audit Genie sweeps (`0 9 * * *`) without blocking the branch chat.
+              </p>
+            </button>
+          </div>
+
+          <!-- Column 3: Data Estate & Unstructured Docs -->
+          <div class="space-y-3 bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">Layer 3: Hays Travel Data Estate</div>
+
+            <button onclick="selectArchNode('bq_lakehouse')" id="node-bq_lakehouse"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">🏛️ Gold SCV, MDM &amp; `iSell`/`iBOS` Tables</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">BigQuery + Catalog</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Mirrors Databricks Unity Catalog Gold SCV (`55` rows), Product MDM (`50` rows) &amp; Bookings (`65` rows).
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('firestore_q')" id="node-firestore_q"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">🔥 Operational Queue &amp; Audit Trail</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">Firestore</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                5 cross-departmental tasks (`TSK-HT-6291`..`6295`) with immutable hand-off `history` arrays.
+              </p>
+            </button>
+
+            <button onclick="selectArchNode('ext_docs')" id="node-ext_docs"
+                    class="arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold">📄 Supplier Extranet &amp; Branch Scans</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-[var(--secondary)] text-[var(--secondary-foreground)]">PDF / XLSX / JPG</span>
+              </div>
+              <p class="text-[11px] text-[var(--muted-foreground)] mt-1">
+                Audit Genie Q3 PDF, P&amp;O/Bedsonline Excel Ledger, and scanned Maidenhead vouchers.
+              </p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Inspector Detail Box -->
+        <div id="arch-detail-box" class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 space-y-2">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <h3 id="arch-detail-title" class="text-sm font-bold">💬 Gemini Enterprise + A2UI v0.9 UI (`flooid-app_1789043114378`)</h3>
+            <span id="arch-detail-badge" class="text-xs font-mono px-2.5 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">
+              Agent ID: 8222496698725446173
+            </span>
+          </div>
+          <p id="arch-detail-desc" class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+            Acts as the conversational and visual co-pilot inside Hays Travel's new <strong>"SMILE"</strong> retail system. Instead of returning plain text, every analytical response is rendered using Google's <strong>A2UI v0.9 Composite Catalog</strong> (`MaterialCard`, `MaterialTable`, `VegaChart`, interactive `BatchEditor` forms, and follow-up suggestion chips).
+          </p>
+          <div id="arch-detail-data" class="text-xs font-mono bg-[var(--card)] border border-[var(--border)] rounded-lg p-3 mt-2">
+            • Surfaces Rendered: welcome-card, Customer 360 &amp; Cruise B629C Comparison Card, A2UI Dynamic Batch Editor (TSK-HT-6291), Audit Genie Discrepancy Matrix
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: DATA ESTATE & MATT MILLS' 3 TIERS -->
+    <div id="tab-data" class="tab-panel hidden space-y-6">
+      <!-- Alignment with Oliver Grant's 3 Tiers -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-4">
+        <h2 class="text-xl font-bold">Alignment with Hays Travel's 3 Data-Dependency Tiers</h2>
+        <p class="text-xs text-[var(--muted-foreground)]">
+          During discovery, <strong>Oliver Grant (Head of Data)</strong> outlined a pragmatic 3-tier roadmap so AI delivers value on Day 1 while the Databricks Medallion Lakehouse matures. This demo showcases all three tiers working together:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 space-y-2">
+            <div class="text-xs font-bold text-sky-500">Tier 1: Zero Backend Integration (Immediate)</div>
+            <div class="text-sm font-semibold">Multimodal Extranet &amp; Voucher Ingestion</div>
+            <p class="text-xs text-[var(--muted-foreground)]">
+              Uses Gemini Vision to read supplier PDFs (`haystravel_audit_report.pdf`), Excel rate sheets (`haystravel_external_ledger.xlsx`), and scanned Maidenhead consultation sheets (`DOC-MAID-8841`) with zero API dependencies.
+            </p>
+            <div class="text-[11px] font-mono text-[var(--muted-foreground)] pt-1">Shown in: Prompts 3 &amp; 4</div>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 space-y-2">
+            <div class="text-xs font-bold text-amber-500">Tier 2: Mid-Level Data Access (`iSell` + `iBOS`)</div>
+            <div class="text-sm font-semibold">Vista Margin Booster &amp; Audit Genie</div>
+            <p class="text-xs text-[var(--muted-foreground)]">
+              Queries `isell_bookings_inquiries` and `supplier_product_mdm` to compare 10.5% 3rd-party quotes against 21.8% Vista packages and flag +12-month departure deferrals (`HT-884105`, `HT-884112`, `HT-884119`).
+            </p>
+            <div class="text-[11px] font-mono text-[var(--muted-foreground)] pt-1">Shown in: Prompts 1, 3, 5 &amp; 6</div>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 space-y-2">
+            <div class="text-xs font-bold text-emerald-500">Tier 3: Full Gold SCV &amp; MDM Lakehouse</div>
+            <div class="text-sm font-semibold">Unified Household 360 &amp; Canonical MDM</div>
+            <p class="text-xs text-[var(--muted-foreground)]">
+              Connects governed `gold_customer_scv` (4 `iSell` duplicates merged into `SCV-HH-84920`) and `supplier_product_mdm` (`PRD-B629C`) with Dataplex Knowledge Catalog lineage.
+            </p>
+            <div class="text-[11px] font-mono text-[var(--muted-foreground)] pt-1">Shown in: Prompts 1, 2, 4 &amp; 7</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Table & Document Cheat Sheet -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-4">
+        <h3 class="text-base font-bold">What Data Lives Where — Quick Reference Table</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="border-b border-[var(--border)] text-[var(--muted-foreground)]">
+                <th class="py-2.5 px-3">Data Asset</th>
+                <th class="py-2.5 px-3">Hays Travel Equivalent</th>
+                <th class="py-2.5 px-3">Rows / Format</th>
+                <th class="py-2.5 px-3">Hero IDs &amp; Key Facts to Mention</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[var(--border)]">
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">gold_customer_scv</td>
+                <td class="py-2.5 px-3">Databricks Gold Single Customer View</td>
+                <td class="py-2.5 px-3">55 Households (BigQuery)</td>
+                <td class="py-2.5 px-3"><strong>`SCV-HH-84920`</strong> (David &amp; Sarah Henderson, Maidenhead `MAID-042`): 4 merged `iSell` IDs, £28,450 lifetime spend, 0.74 High cancellation risk, Balcony Deluxe.</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">supplier_product_mdm</td>
+                <td class="py-2.5 px-3">Cruise &amp; Vista Master Data Catalog</td>
+                <td class="py-2.5 px-3">50 Products (BigQuery)</td>
+                <td class="py-2.5 px-3"><strong>`PRD-B629C`</strong> (Voyage <strong>`B629C`</strong> — P&amp;O Arvia 14N Canary Islands + Riu Palace Tenerife): TUI £6,290 (10.5% = £660.45) vs. Vista £6,140 (21.8% = £1,338.52, <strong>+£678.07 uplift</strong>).</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">isell_bookings_inquiries</td>
+                <td class="py-2.5 px-3">`iSell` Branch Quotes + `iBOS` Finance</td>
+                <td class="py-2.5 px-3">65 Bookings (BigQuery)</td>
+                <td class="py-2.5 px-3"><strong>`HT-884120`</strong> (+£420 extranet variance); Audit Genie +12M deferrals: <strong>`HT-884105`</strong> (+£445), <strong>`HT-884112`</strong> (+£495), <strong>`HT-884119`</strong> (+£390).</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">demo-haystravel-6291-tasks</td>
+                <td class="py-2.5 px-3">Cross-Branch &amp; HQ Operations Queue</td>
+                <td class="py-2.5 px-3">5 Live Tasks (Firestore)</td>
+                <td class="py-2.5 px-3"><strong>`TSK-HT-6291`..`6295`</strong> synced live to the Operations Console with full departmental `history` audit logs.</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">haystravel_audit_report.pdf<br/>haystravel_external_ledger.xlsx</td>
+                <td class="py-2.5 px-3">Sunderland Audit Report &amp; Supplier Extranet Ledger</td>
+                <td class="py-2.5 px-3">PDF + Excel (GCS)</td>
+                <td class="py-2.5 px-3">Contains the external P&amp;O/Bedsonline invoiced figures (£5,221.48 vs £4,801.48 in `iBOS` on `HT-884120`) and Q3 Audit Genie findings.</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-mono font-semibold">haystravel_simulated_order_task1.jpg<br/>haystravel_simulated_order_task2_discrepancy.jpg</td>
+                <td class="py-2.5 px-3">Maidenhead Consultation Sheet &amp; Extranet Voucher</td>
+                <td class="py-2.5 px-3">2 Scanned JPGs (GCS)</td>
+                <td class="py-2.5 px-3"><strong>`DOC-MAID-8841`</strong> &amp; <strong>`DOC-PTCLS-8849`</strong> containing raw hotel alias `"HTL RIU PALACE TENERIFE ADEJE"` and +£420 supplement.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: LIVE 7-STEP STORYBOARD & ONE-CLICK PROMPTS -->
+    <div id="tab-playbook" class="tab-panel hidden space-y-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <h2 class="text-xl font-bold">Live 7-Step Demo Storyboard &amp; One-Click Prompt Copy</h2>
+            <p class="text-xs text-[var(--muted-foreground)]">
+              Click <strong>Copy Prompt</strong> on each step as you walk the customer through the journey from Maidenhead (`MAID-042`) to Sunderland HQ.
+            </p>
+          </div>
+          <span id="copy-toast" class="hidden text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-500">
+            ✅ Copied to clipboard!
+          </span>
+        </div>
+
+        <div id="prompts-container" class="space-y-3"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const ARCH_NODES = {
+      ge_ui: {
+        title: "💬 Gemini Enterprise + A2UI v0.9 UI (flooid-app_1789043114378)",
+        badge: "Agent ID: 8222496698725446173",
+        desc: "Acts as the conversational and visual co-pilot inside Hays Travel's new 'SMILE' retail platform. Instead of plain text tables, responses render interactive A2UI v0.9 cards (MaterialCard, MaterialTable, VegaChart, and Dynamic Batch Editor forms) with one-click follow-up chips.",
+        data: "• Surfaces Rendered: welcome-card, Customer 360 & Cruise B629C Comparison Card, A2UI Dynamic Batch Editor (TSK-HT-6291), Audit Genie Discrepancy Matrix"
+      },
+      ops_viewer: {
+        title: "📊 Real-Time Operations Console (ge-viewer-ge-demo-haystravel-6291)",
+        badge: "Cloud Run + IAP Protected",
+        desc: "Live cross-departmental task board connecting Maidenhead Retail Branch (MAID-042), the Vista Specialist Desk, and Sunderland HQ Commercial Finance. Updates automatically in sub-100ms when the user approves an A2UI Batch Editor card in chat.",
+        data: "• Active Tasks: TSK-HT-6291 (Henderson Vista Switch), TSK-HT-6292/6293/6295 (+12M Deferral Audits), TSK-HT-6294 (Riu Palace MDM Deduplication)"
+      },
+      html_dash: {
+        title: "📈 Published Interactive Dashboards & Executive Deliverables",
+        badge: "Bucket: merdogdu-sandbox-398713-haystravel-6291-dash",
+        desc: "Stores self-contained HTML margin simulators (created via publish_dashboard in Prompt 1) and board-ready PowerPoint (.pptx) & PDF deliverables built by the Autonomous Sandbox Specialist in Prompt 5.",
+        data: "• Deliverables: Interactive Branch & Vista Margin HTML Dashboard, Gilbridge House Executive Board Deck (.pptx), Commercial Governance Brief (.pdf)"
+      },
+      root_agent: {
+        title: "🤖 SMILE Sidekick Multi-Agent Runtime (ge-demo-haystravel-6291)",
+        badge: "Gemini 3.8 Flash + ADK Triple-Agent",
+        desc: "Cloud Run service hosting root_agent (fast conversational coordinator & A2UI builder), deep_analysis_agent (multi-table SQL & multimodal document reconciliation), and background_agent (async batch worker).",
+        data: "• Connected MCP Toolsets: BigQuery SQL, Dataplex Knowledge Catalog, Firestore Task Queue, Gemini 3.1 Flash Image Generator, Agent Engine Code Sandbox"
+      },
+      managed_agent: {
+        title: "🧪 Managed Autonomous Sandbox Specialist (ge-demo-haystravel-6291-auto)",
+        badge: "Vertex AI Agent Engine + Craft Skills",
+        desc: "Persistent Linux sandbox environment with Python, Pandas, ReportLab, python-pptx, and Google Search. Receives authoritative BigQuery numbers from root_agent and autonomously executes multi-step research, chart generation, and slide/PDF assembly.",
+        data: "• Mounted Skills: /workspace/.agent/skills (professional-presentation, professional-document, web-report)"
+      },
+      scheduler: {
+        title: "⏰ Automated Background Worker & 09:00 AM Audit Genie Monitor",
+        badge: "Pub/Sub: haystravel-6291-sched-tasks",
+        desc: "Executes long-running batch reconciliations via Cloud Tasks (ge-demo-haystravel-6291-worker) and runs the daily 09:00 AM UK cron job scanning for +12-month departure deferrals and >£250 extranet variances.",
+        data: "• Monitored Rules: departure_date_deferral_months >= 12, ibos_variance_gbp > £250, Quote_Ready_For_Vista_Switch"
+      },
+      bq_lakehouse: {
+        title: "🏛️ BigQuery Dataset (demo_haystravel_6291) + Knowledge Catalog",
+        badge: "Mirrors Databricks Unity Catalog + iSell / iBOS",
+        desc: "Houses the 3 core structured tables with governed table and column metadata registered in Dataplex Knowledge Catalog so the agent verifies business definitions before writing SQL.",
+        data: "• Tables: gold_customer_scv (55 rows, PK scv_household_id), supplier_product_mdm (50 rows, PK canonical_product_id), isell_bookings_inquiries (65 rows, PK booking_ref)"
+      },
+      firestore_q: {
+        title: "🔥 Firestore Operational Collection (demo-haystravel-6291-tasks)",
+        badge: "Sub-100ms Real-Time State & Audit Log",
+        desc: "Stores live cross-departmental operational tasks and an append-only history array recording every human-approved action across Maidenhead Branch, Vista Desk, and Sunderland HQ.",
+        data: "• Documents: TSK-HT-6291 (HT-884120), TSK-HT-6292 (HT-884105), TSK-HT-6293 (HT-884112), TSK-HT-6294 (PRD-B629C MDM), TSK-HT-6295 (HT-884119)"
+      },
+      ext_docs: {
+        title: "📄 Unstructured Extranet & Branch Documents (merdogdu-sandbox-398713-haystravel-6291-docs)",
+        badge: "PDF + Excel + 2 Scanned Images",
+        desc: "Represents the external supplier rate sheets, audit reports, and handwritten branch consultation sheets that lack APIs today and are reconciled via Gemini Multimodal Vision.",
+        data: "• Files: haystravel_audit_report.pdf, haystravel_external_ledger.xlsx, haystravel_simulated_order_task1.jpg (DOC-MAID-8841), haystravel_simulated_order_task2_discrepancy.jpg (DOC-PTCLS-8849)"
+      }
+    };
+
+    const PROMPTS = [
+      {
+        step: "Step 0 • Warm-Up",
+        persona: "Maidenhead Retail Branch Manager (Rachel — MAID-042)",
+        title: "Instant A2UI v0.9 Welcome Workspace Card",
+        attachment: "None (Zero tool calls — instant response)",
+        prompt: "Hello",
+        outcome: "Renders the Hays Travel SMILE Sidekick Welcome Card (surfaceId: welcome-card) with 3 one-click starter actions."
+      },
+      {
+        step: "Prompt 1 • Customer 360 & Vista Margin Booster",
+        persona: "Maidenhead Retail Branch Manager (Rachel — MAID-042)",
+        title: "Resolve 4 iSell Duplicates (`SCV-HH-84920`), Compare Cruise `B629C` vs. Vista (`+£678.07`), & Build Live HTML Simulator",
+        attachment: "None — Queries BigQuery (`gold_customer_scv`, `supplier_product_mdm`, `isell_bookings_inquiries`)",
+        prompt: "David and Sarah Henderson (Household ID SCV-HH-84920) have just walked into our Maidenhead branch (MAID-042) asking about quote HT-884120 for P&O Arvia cruise voyage code B629C. Give me their unified Databricks Gold Customer 360 profile—including how many legacy iSell duplicate records were merged and their cancellation risk—compare the 3rd-party TUI package against our in-house Vista Dynamic Package for PRD-B629C, and build an interactive HTML margin & branch KPI dashboard so we can review the commission uplift across our top cruise and Vista packages.",
+        outcome: "Shows 4 merged iSell duplicates, £28,450 spend, 0.74 churn risk, £150 client saving (£6,140 vs £6,290), +£678.07 Vista commission uplift (21.8% vs 10.5%), and publishes a live interactive HTML dashboard."
+      },
+      {
+        step: "Prompt 2 • Data Governance & Unity Catalog Lineage",
+        persona: "Sunderland Data & Architecture Lead (Oliver Grant's Team)",
+        title: "Inspect Governed Knowledge Catalog Definitions & Schema Relationships",
+        attachment: "None — Queries Dataplex Knowledge Catalog MCP (`search_entries`, `lookup_entry`)",
+        prompt: "Before we roll out the new SMILE and Vista margin rules across all branches, inspect the Knowledge Catalog metadata for our demo_haystravel_6291 dataset. Explain the schema lineage and primary/foreign key relationships between gold_customer_scv, supplier_product_mdm, and isell_bookings_inquiries, and summarize how vista_margin_uplift_gbp, departure_date_deferral_months, and ibos_variance_gbp are governed across Maidenhead and Sunderland HQ.",
+        outcome: "Retrieves catalog metadata for all 3 tables and renders an A2UI governance & lineage card."
+      },
+      {
+        step: "Prompt 3 • Cross-Source Audit Genie [WOW MOMENT]",
+        persona: "Sunderland HQ Commercial Finance & Audit Genie Lead",
+        title: "Reconcile Audit PDF + Extranet Excel Ledger Against Live `iBOS` BigQuery Tables",
+        attachment: "📎 Attach `haystravel_audit_report.pdf` + `haystravel_external_ledger.xlsx`",
+        prompt: "Cross-reference the attached Sunderland HQ Audit Genie report and P&O / Bedsonline Supplier Extranet Settlement Ledger against our live BigQuery isell_bookings_inquiries and supplier_product_mdm tables. Identify every booking with an untracked 5-15% net cost variance between iBOS and the supplier extranet—including the Hendersons' quote HT-884120—and flag all bookings exhibiting the +12-month artificial departure date deferral pattern. Render a visual executive comparison and discrepancy breakdown.",
+        outcome: "Flags the +£420.00 extranet variance on HT-884120 (£4,801.48 vs £5,221.48) and the 3 +12-month artificial departure deferrals (HT-884105 +£445, HT-884112 +£495, HT-884119 +£390 = £1,750 total hero variance)."
+      },
+      {
+        step: "Prompt 4 • Multimodal Scan + A2UI Batch Editor [WOW MOMENT]",
+        persona: "Vista Specialist Desk & Maidenhead Branch Consultant",
+        title: "Scan Handwritten Consultation Sheet (`DOC-MAID-8841`), Resolve Hotel MDM, & Approve Live Update",
+        attachment: "📎 Attach `haystravel_simulated_order_task1.jpg` (and/or `haystravel_simulated_order_task2_discrepancy.jpg`)",
+        prompt: "Please scan this Maidenhead SMILE consultation sheet and supplier extranet contract voucher. Extract the booking reference, voyage code, and raw hotel string (\"HTL RIU PALACE TENERIFE ADEJE\"), resolve them against our canonical supplier_product_mdm catalog (PRD-B629C), and prepare an interactive Batch Editor card so I can approve converting HT-884120 to our in-house Vista Dynamic Package, reconciling the +£420.00 extranet variance, and advancing task TSK-HT-6291 on the Operations Console.",
+        outcome: "Extracts fields via Gemini Vision, resolves raw hotel string to PRD-B629C, and presents an interactive A2UI Batch Editor form. Clicking Approve updates BigQuery and advances TSK-HT-6291 on the live Operations Console."
+      },
+      {
+        step: "Prompt 5 • Autonomous Sandbox Delegation [WOW MOMENT]",
+        persona: "Head of Vista Tour Operations (Gilbridge House HQ)",
+        title: "Delegate Executive Board PowerPoint (`.pptx`) & Commercial Governance Brief (`.pdf`)",
+        attachment: "None — Invokes `delegate_autonomous_task` on `ge-demo-haystravel-6291-auto`",
+        prompt: "Using our live BigQuery figures for Maidenhead (MAID-042), Sunderland (SUND-001), and the Henderson household case (SCV-HH-84920 / HT-884120 / PRD-B629C), delegate to the autonomous specialist agent to research current UK ATOL dynamic packaging market trends and build both an executive PowerPoint presentation (.pptx) and a formal PDF Commercial Governance Brief (.pdf) for the Gilbridge House Executive Board quantifying the commission uplift from shifting 3rd-party bookings to Vista Dynamic Packages and eliminating +12-month departure deferrals.",
+        outcome: "Autonomous sandbox agent researches UK ATOL trends, builds charts, and uploads downloadable .pptx and .pdf board deliverables."
+      },
+      {
+        step: "Prompt 6 • Proactive Daily 09:00 AM Governance",
+        persona: "Sunderland HQ Audit Genie Manager",
+        title: "Register Recurring `0 9 * * *` Daily Monitor for +12M Deferrals & Vista Upgrades",
+        attachment: "None — Registers Pub/Sub & Cloud Scheduler rule (`schedule_autonomous_task`)",
+        prompt: "Set up an automated recurring Audit Genie & Vista Margin monitoring job to run every morning at 09:00 AM UK time (cron: 0 9 * * *). It should scan isell_bookings_inquiries and supplier_product_mdm for any booking whose departure date was pushed forward by 12 months (departure_date_deferral_months >= 12), any iBOS vs. supplier extranet variance exceeding £250, or any high-value quote eligible for a Vista Dynamic Package upgrade, and automatically log tasks to the Sunderland HQ and retail branch operations queue.",
+        outcome: "Registers the daily 09:00 AM automated compliance & margin sweep and renders an A2UI confirmation card."
+      },
+      {
+        step: "Prompt 7 • Executive Transformation Closure",
+        persona: "Chief Operating Officer (Gilbridge House HQ)",
+        title: "End-to-End ROI Scorecard (135 Mins → 90 Secs) & Full Queue Resolution",
+        attachment: "None — Synthesizes BigQuery + Firestore Queue (`demo-haystravel-6291-tasks`)",
+        prompt: "Provide a comprehensive end-to-end executive closure report for the Maidenhead (MAID-042) to Sunderland HQ workflow we just executed—following David & Sarah Henderson (SCV-HH-84920 / HT-884120 / B629C) and the Audit Genie batch (HT-884105, HT-884112, HT-884119). Quantify the before-and-after cycle time per consultation, total legacy iSell duplicates consolidated across our 55 Gold households, total Vista commission uplift in GBP across our 50 catalog products, and total iBOS extranet variance reconciled, and update all remaining open tasks in our Firestore operations queue with a final executive audit log.",
+        outcome: "Closes out all remaining Firestore tasks with an executive audit trail and renders the final before/after ROI scorecard."
+      }
+    ];
+
+    function switchTab(tabId) {
+      ['story', 'arch', 'data', 'playbook'].forEach(id => {
+        const panel = document.getElementById('tab-' + id);
+        const btn = document.getElementById('tab-btn-' + id);
+        if (id === tabId) {
+          panel.classList.remove('hidden');
+          btn.className = "tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition bg-[var(--primary)] text-[var(--primary-foreground)]";
+        } else {
+          panel.classList.add('hidden');
+          btn.className = "tab-btn flex-1 min-w-[180px] px-4 py-2.5 rounded-lg text-xs font-semibold transition text-[var(--muted-foreground)] hover:text-[var(--foreground)]";
+        }
+      });
+    }
+
+    function updateSimulator() {
+      const bookings = parseInt(document.getElementById('sim-bookings').value, 10);
+      const uplift = parseInt(document.getElementById('sim-uplift').value, 10);
+      document.getElementById('sim-bookings-label').textContent = bookings.toLocaleString('en-GB') + ' bookings / week';
+      document.getElementById('sim-uplift-label').textContent = '£' + uplift.toLocaleString('en-GB') + ' / booking';
+      const annualMargin = bookings * uplift * 52;
+      const annualHours = Math.round(bookings * 52 * 2.22);
+      document.getElementById('sim-annual-total').textContent = '£' + annualMargin.toLocaleString('en-GB') + ' / yr';
+      document.getElementById('sim-hours-saved').textContent = '+ ' + annualHours.toLocaleString('en-GB') + ' branch consultant hours saved/yr';
+    }
+
+    function selectArchNode(nodeId) {
+      const info = ARCH_NODES[nodeId];
+      if (!info) return;
+      document.querySelectorAll('.arch-node').forEach(el => {
+        el.className = "arch-node w-full text-left p-3.5 rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:opacity-95";
+      });
+      const active = document.getElementById('node-' + nodeId);
+      if (active) {
+        active.className = "arch-node w-full text-left p-3.5 rounded-xl border-2 border-[var(--primary)] bg-[var(--card)] transition hover:opacity-95";
+      }
+      document.getElementById('arch-detail-title').textContent = info.title;
+      document.getElementById('arch-detail-badge').textContent = info.badge;
+      document.getElementById('arch-detail-desc').textContent = info.desc;
+      document.getElementById('arch-detail-data').textContent = info.data;
+    }
+
+    function copyPromptText(idx) {
+      const text = PROMPTS[idx].prompt;
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.classList.remove('hidden');
+        setTimeout(() => toast.classList.add('hidden'), 2200);
+      });
+    }
+
+    function renderPrompts() {
+      const container = document.getElementById('prompts-container');
+      container.innerHTML = PROMPTS.map((p, idx) => `
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 space-y-2.5">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]">${p.step}</span>
+              <span class="text-xs font-semibold text-[var(--muted-foreground)]">${p.persona}</span>
+            </div>
+            <button onclick="copyPromptText(${idx})"
+                    class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 transition">
+              📋 Copy Prompt
+            </button>
+          </div>
+          <div class="text-sm font-bold">${p.title}</div>
+          <div class="text-[11px] font-medium text-amber-500">${p.attachment}</div>
+          <pre class="text-xs font-mono whitespace-pre-wrap bg-[var(--card)] border border-[var(--border)] rounded-lg p-3 text-[var(--foreground)]">${p.prompt}</pre>
+          <div class="text-xs text-[var(--muted-foreground)]"><strong>Expected Outcome:</strong> ${p.outcome}</div>
+        </div>
+      `).join('');
+    }
+
+    renderPrompts();
+  </script>
+</body>
+</html>

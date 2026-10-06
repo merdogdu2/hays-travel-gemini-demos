@@ -1,0 +1,1 @@
+One row per unified household in the Azure Databricks Gold 4-Table Single Customer View (>450-point probabilistic identity resolution across iSell duplicates), enriched with Experian Mosaic UK and cancellation risk scores. Rows: 55. Coverage: no date column

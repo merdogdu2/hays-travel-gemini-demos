@@ -1,0 +1,127 @@
+[
+  {
+    "id": "TSK-BR-101",
+    "data": {
+      "task_id": "TSK-BR-101",
+      "title": "Henderson Family (QT-MAID-901) \u2014 Auto-Fill iSell from Supplier Confirmation & Attach Parking/FX",
+      "issue_type": "Screenshot_To_iSell_AutoFill",
+      "risk_level": "HIGH",
+      "current_status": "PENDING_REVIEW",
+      "workflow_state": "Maidenhead Desk (Rachel) \u2014 Ready for 1-Click iSell Auto-Fill",
+      "assigned_department": "Maidenhead Branch (Rachel \u2014 Branch Manager)",
+      "booking_ref": "QT-MAID-901",
+      "customer_id": "CUST-101",
+      "package_code": "B629C",
+      "financial_impact_gbp": 1338.52,
+      "recommended_action": "Scan confirmed P&O / Vista booking voucher (DOC-BOOK-901), auto-fill flight/cabin/hotel fields into iSell, and attach Gatwick Parking (\u00a398) + \u20ac1,200 Sunny Spend FX card.",
+      "history": [
+        {
+          "timestamp": "2026-10-02T08:00:00Z",
+          "department": "Maidenhead Branch Walk-In Desk",
+          "actor": "SMILE Co-Pilot",
+          "action": "Merged 4 duplicate iSell records into CUST-101 and matched P&O Arvia B629C Vista package (\u00a36,140, saving customer \u00a3150 and earning +\u00a3678.07 extra commission)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-BR-102",
+    "data": {
+      "task_id": "TSK-BR-102",
+      "title": "Miller Family (QT-MAID-902) \u2014 48-Hour Quote Follow-Up (Torremolinos Soft-Sand Beach)",
+      "issue_type": "Quote_FollowUp_48Hr",
+      "risk_level": "MEDIUM",
+      "current_status": "OPEN",
+      "workflow_state": "Maidenhead Desk (Chloe) \u2014 48-Hr Follow-Up Due",
+      "assigned_department": "Maidenhead Branch (Chloe \u2014 Apprentice Consultant)",
+      "booking_ref": "QT-MAID-902",
+      "customer_id": "CUST-102",
+      "package_code": "FAM-TOR-402",
+      "financial_impact_gbp": 680.4,
+      "recommended_action": "Send personalized follow-up highlighting guaranteed interconnecting rooms at Sol Principe Torremolinos and \u00a3150 Vista family saving.",
+      "history": [
+        {
+          "timestamp": "2026-10-02T08:05:00Z",
+          "department": "Maidenhead Branch Desk",
+          "actor": "Chloe (Apprentice Consultant)",
+          "action": "Used Veteran Tribal Tip to switch family from stony Marbella beach to soft-sand Torremolinos (FAM-TOR-402)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-BR-103",
+    "data": {
+      "task_id": "TSK-BR-103",
+      "title": "Pendelton Couple (QT-MAID-903) \u2014 Confirm 72cm Accessible Cabin Doorway on P&O Iona",
+      "issue_type": "Accessibility_Check",
+      "risk_level": "MEDIUM",
+      "current_status": "OPEN",
+      "workflow_state": "Maidenhead Desk \u2014 Mobility Scooter Verification",
+      "assigned_department": "Maidenhead Branch (Chloe \u2014 Apprentice Consultant)",
+      "booking_ref": "QT-MAID-903",
+      "customer_id": "CUST-103",
+      "package_code": "CRU-IONA-510",
+      "financial_impact_gbp": 955.5,
+      "recommended_action": "Confirm Deck 11 Accessible Balcony (72cm doorway + roll-in wet room) and CPS Southampton valet parking.",
+      "history": [
+        {
+          "timestamp": "2026-10-02T08:10:00Z",
+          "department": "Maidenhead Branch Desk",
+          "actor": "SMILE Co-Pilot",
+          "action": "Verified P&O Iona Deck 11 accessible cabin specs for collapsible mobility scooter."
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-BR-104",
+    "data": {
+      "task_id": "TSK-BR-104",
+      "title": "Check-In Monday Automation \u2014 6 Maidenhead Families Departing Next Week",
+      "issue_type": "CheckIn_Monday_Batch",
+      "risk_level": "LOW",
+      "current_status": "OPEN",
+      "workflow_state": "Maidenhead Branch \u2014 Automated Boarding Pass Prep",
+      "assigned_department": "Maidenhead Branch Team",
+      "booking_ref": "QT-MAID-905",
+      "customer_id": "CUST-105",
+      "package_code": "ADU-LNZ-308",
+      "financial_impact_gbp": 593.4,
+      "recommended_action": "Run automated Check-In Monday checklist and send Sunny Spend FX top-up reminder.",
+      "history": [
+        {
+          "timestamp": "2026-10-02T08:12:00Z",
+          "department": "Maidenhead Branch Desk",
+          "actor": "SMILE Co-Pilot",
+          "action": "Queued 6 departing Maidenhead bookings for Check-In Monday boarding pass pack."
+        }
+      ]
+    }
+  },
+  {
+    "id": "TSK-BR-105",
+    "data": {
+      "task_id": "TSK-BR-105",
+      "title": "Patel Family (QT-MAID-904) \u2014 Lock In Complimentary Ikos Dine-Out & Heathrow Lounge",
+      "issue_type": "VIP_Ancillary_FollowUp",
+      "risk_level": "MEDIUM",
+      "current_status": "OPEN",
+      "workflow_state": "Maidenhead Desk (Sam) \u2014 VIP Concierge",
+      "assigned_department": "Maidenhead Branch (Sam \u2014 Senior Consultant)",
+      "booking_ref": "QT-MAID-904",
+      "customer_id": "CUST-104",
+      "package_code": "FAM-HLK-902",
+      "financial_impact_gbp": 1713.6,
+      "recommended_action": "Confirm Ikos Olivia Deluxe Bungalow and attach \u00a31,500 Sunny Spend FX card.",
+      "history": [
+        {
+          "timestamp": "2026-10-02T08:15:00Z",
+          "department": "Maidenhead Branch Desk",
+          "actor": "Sam (Senior Consultant)",
+          "action": "Prepared Vista luxury family quote saving customer \u00a3240 vs TUI."
+        }
+      ]
+    }
+  }
+]

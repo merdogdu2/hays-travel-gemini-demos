@@ -1,0 +1,793 @@
+{
+  "style": {
+    "handwriting_language": "English",
+    "routine_doc_kind": "Hays Travel Retail Branch Consultation & Extranet Booking Confirmation Slip",
+    "exception_doc_kind": "PTC Lead Support Amendment & Direct Debit Deferral Escalation Form",
+    "location": "Maidenhead Retail Branch (MAID-042) & Sunderland HQ (GIL-001)",
+    "approval_seal": "HAYS TRAVEL SMILE VERIFIED",
+    "review_stamp": "MDM & VISTA MARGIN AUDIT",
+    "urgent_note": "Action Required: Canonicalize free-text hotel to Google Places ID & confirm Vista B629C 21.8% margin uplift."
+  },
+  "pdf": {
+    "title": "Hays Travel Q3 Commercial Margin, MDM & 'Audit Genie' Reconciliation Report (Sunderland HQ)",
+    "sections": [
+      {
+        "heading": "1. Executive Summary & Board '1/3 Vista Mix' Mandate",
+        "content": "Across Hays Travel's \u00a33.0B TTV estate (500 retail branches generating 68.44% of bookings and 161 Contact Centre FTEs), shifting short-haul third-party package volume (Jet2holidays 32.91%, easyJet 16.12%, TUI 15.33% at 10-12% commission) into in-house Vista dynamic packages and Cruise-and-Stay itineraries (15-25% gross margin) is our primary profitability lever ahead of the 9 November 2026 Vista Platform launch. However, manual re-keying from supplier extranets into Traveltek iSell has created 292,000 duplicate hotel strings in Azure Databricks Silver and obscured \u00a359M (5.92%) in cancellation exposure."
+      },
+      {
+        "heading": "2. Cross-Source iBOS Commission Variance & 'Audit Genie' Deferral Findings",
+        "content": "Reconciliation between supplier settlement statements (external_ledger.xlsx) and Traveltek iBOS expected margin (isell_bookings_inquiries) isolated four critical anomalies totaling \u00a3643.81 in untracked margin variance and \u00a324,940.00 in high-risk transaction value. Specifically, booking HT-884120 (SCV-HH-84920, Henderson Family at Maidenhead Branch MAID-042) exhibits a -12.4% margin discrepancy (\u00a31,406.10 expected in iSell vs \u00a31,231.74 supplier settlement) caused by an unmapped free-text TUI extranet hotel entry ('Riu Palace Adeje Costa (TUI Extranet)'). Additionally, Databricks Audit Genie flagged three bookings (HT-884105, HT-884112, HT-884119) where departure dates were pushed out by exactly 12 months (deferral_months_shifted = 12) while Direct Debit accounts sat in Default_Risk, artificially inflating monthly branch sales bonus attainment."
+      }
+    ],
+    "discrepancy": {
+      "heading": "3. Flagged Booking Discrepancies (iBOS Expected vs. External Supplier Settlement)",
+      "table_data": [
+        [
+          "Booking Ref",
+          "Household SCV",
+          "Product ID",
+          "iSell Expected Margin",
+          "Supplier Ledger Remitted",
+          "Variance %",
+          "Audit Genie & MDM Finding"
+        ],
+        [
+          "HT-884120",
+          "SCV-HH-84920",
+          "PRD-B629C",
+          "\u00a31,406.10",
+          "\u00a31,231.74",
+          "-12.4%",
+          "Unmapped TUI free-text hotel; upgrade to Vista B629C (21.8% margin)"
+        ],
+        [
+          "HT-884105",
+          "SCV-HH-84905",
+          "PRD-IONA-711",
+          "\u00a3852.80",
+          "\u00a3735.10",
+          "-13.8%",
+          "Departure pushed +12m (2027-09-15); DD in Default_Risk"
+        ],
+        [
+          "HT-884112",
+          "SCV-HH-84912",
+          "PRD-JET2-109",
+          "\u00a3427.90",
+          "\u00a3378.70",
+          "-11.5%",
+          "Departure pushed +12m (2027-10-04); bonus protection flag"
+        ],
+        [
+          "HT-884119",
+          "SCV-HH-84919",
+          "PRD-VISTA-808",
+          "\u00a32,199.60",
+          "\u00a31,948.85",
+          "-11.4%",
+          "Departure pushed +12m (2027-11-12); uncollected balance"
+        ]
+      ]
+    }
+  },
+  "excel": {
+    "title": "Hays Travel iBOS & Supplier Extranet Settlement Ledger (FY26 Q3)",
+    "kpis": [
+      {
+        "label": "Tracked Bookings Audited",
+        "value": "45 Records"
+      },
+      {
+        "label": "Flagged Audit Genie & MDM Variances",
+        "value": "4 Bookings (-12.1% Avg Variance)"
+      },
+      {
+        "label": "Duplicate Hotel Strings Pending MDM",
+        "value": "292,000 Silver Records"
+      },
+      {
+        "label": "Cancellation Pool at Risk (5.92%)",
+        "value": "\u00a359.0M GBV"
+      }
+    ],
+    "headers": [
+      "booking_ref",
+      "scv_household_id",
+      "canonical_product_id",
+      "owning_department",
+      "booking_status",
+      "departure_date",
+      "deferral_months_shifted",
+      "total_package_gbp",
+      "isell_expected_margin_gbp",
+      "supplier_remitted_margin_gbp",
+      "audit_reconciliation_note"
+    ],
+    "rows": [
+      [
+        "HT-884120",
+        "SCV-HH-84920",
+        "PRD-B629C",
+        "Branch_Sales",
+        "At_Risk_Cancellation",
+        "2026-11-18",
+        0,
+        "\u00a36,450.00",
+        "\u00a31,406.10",
+        "\u00a31,231.74",
+        "VARIANCE FLAG (-12.4%): TUI Extranet promo code unrecorded in iBOS; upgrade to Vista PRD-B629C pending"
+      ],
+      [
+        "HT-884105",
+        "SCV-HH-84905",
+        "PRD-IONA-711",
+        "Finance_iBOS",
+        "Deferred_Audit_Flag",
+        "2027-09-15",
+        12,
+        "\u00a35,200.00",
+        "\u00a3852.80",
+        "\u00a3735.10",
+        "AUDIT GENIE ALERT: Departure shifted +12m (2027-09-15) while DD in Default_Risk"
+      ],
+      [
+        "HT-884112",
+        "SCV-HH-84912",
+        "PRD-JET2-109",
+        "Finance_iBOS",
+        "Deferred_Audit_Flag",
+        "2027-10-04",
+        12,
+        "\u00a33,890.00",
+        "\u00a3427.90",
+        "\u00a3378.70",
+        "AUDIT GENIE ALERT: Departure shifted +12m (2027-10-04) to protect Q3 branch bonus"
+      ],
+      [
+        "HT-884119",
+        "SCV-HH-84919",
+        "PRD-VISTA-808",
+        "Finance_iBOS",
+        "Deferred_Audit_Flag",
+        "2027-11-12",
+        12,
+        "\u00a39,400.00",
+        "\u00a32,199.60",
+        "\u00a31,948.85",
+        "AUDIT GENIE ALERT: Departure shifted +12m (2027-11-12); uncollected deposit balance"
+      ],
+      [
+        "HT-884125",
+        "SCV-HH-84925",
+        "PRD-VISTA-901",
+        "Vista_Desk",
+        "Vista_Ticketing",
+        "2026-12-05",
+        0,
+        "\u00a38,200.00",
+        "\u00a31,984.40",
+        "\u00a31,984.40",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884130",
+        "SCV-HH-84930",
+        "PRD-VISTA-402",
+        "Contact_Centre",
+        "Quote_Open",
+        "2026-10-24",
+        0,
+        "\u00a32,950.00",
+        "\u00a3575.25",
+        "\u00a3575.25",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884135",
+        "SCV-HH-84935",
+        "PRD-EZJ-204",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2027-05-14",
+        0,
+        "\u00a35,600.00",
+        "\u00a3571.20",
+        "\u00a3571.20",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884140",
+        "SCV-HH-84940",
+        "PRD-B629C",
+        "Vista_Desk",
+        "Confirmed_DD",
+        "2026-11-18",
+        0,
+        "\u00a36,800.00",
+        "\u00a31,482.40",
+        "\u00a31,482.40",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884149",
+        "SCV-HH-84949",
+        "PRD-CAT-308",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-10-20",
+        0,
+        "\u00a38,189.66",
+        "\u00a3958.19",
+        "\u00a3958.19",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884150",
+        "SCV-HH-84950",
+        "PRD-CAT-309",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-11-15",
+        0,
+        "\u00a38,226.57",
+        "\u00a31,390.29",
+        "\u00a31,390.29",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884151",
+        "SCV-HH-84951",
+        "PRD-CAT-310",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-10-25",
+        0,
+        "\u00a34,046.01",
+        "\u00a3760.65",
+        "\u00a3760.65",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884152",
+        "SCV-HH-84952",
+        "PRD-CAT-311",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-11-17",
+        0,
+        "\u00a34,049.63",
+        "\u00a3453.56",
+        "\u00a3453.56",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884153",
+        "SCV-HH-84953",
+        "PRD-CAT-312",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-11-18",
+        0,
+        "\u00a38,796.21",
+        "\u00a3932.40",
+        "\u00a3932.40",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884154",
+        "SCV-HH-84954",
+        "PRD-CAT-313",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-12-26",
+        0,
+        "\u00a35,357.62",
+        "\u00a3583.98",
+        "\u00a3583.98",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884155",
+        "SCV-HH-84955",
+        "PRD-CAT-314",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-10-18",
+        0,
+        "\u00a33,721.40",
+        "\u00a3666.13",
+        "\u00a3666.13",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884156",
+        "SCV-HH-84956",
+        "PRD-CAT-315",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-10-23",
+        0,
+        "\u00a34,958.08",
+        "\u00a3892.45",
+        "\u00a3892.45",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884157",
+        "SCV-HH-84957",
+        "PRD-CAT-316",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-12-26",
+        0,
+        "\u00a33,255.78",
+        "\u00a3387.44",
+        "\u00a3387.44",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884158",
+        "SCV-HH-84958",
+        "PRD-CAT-317",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-10-23",
+        0,
+        "\u00a32,412.52",
+        "\u00a3291.91",
+        "\u00a3291.91",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884159",
+        "SCV-HH-84959",
+        "PRD-CAT-318",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-11-12",
+        0,
+        "\u00a39,421.67",
+        "\u00a31,055.23",
+        "\u00a31,055.23",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884160",
+        "SCV-HH-84960",
+        "PRD-CAT-319",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-12-13",
+        0,
+        "\u00a37,726.18",
+        "\u00a31,298.00",
+        "\u00a31,298.00",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884161",
+        "SCV-HH-84961",
+        "PRD-CAT-320",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-11-23",
+        0,
+        "\u00a34,813.75",
+        "\u00a3909.80",
+        "\u00a3909.80",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884162",
+        "SCV-HH-84962",
+        "PRD-CAT-321",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-10-16",
+        0,
+        "\u00a35,511.30",
+        "\u00a3573.18",
+        "\u00a3573.18",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884163",
+        "SCV-HH-84963",
+        "PRD-CAT-322",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-12-28",
+        0,
+        "\u00a34,627.03",
+        "\u00a3522.85",
+        "\u00a3522.85",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884164",
+        "SCV-HH-84964",
+        "PRD-CAT-323",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-11-16",
+        0,
+        "\u00a35,581.17",
+        "\u00a3669.74",
+        "\u00a3669.74",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884165",
+        "SCV-HH-84965",
+        "PRD-CAT-324",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-11-24",
+        0,
+        "\u00a37,399.64",
+        "\u00a31,191.34",
+        "\u00a31,191.34",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884166",
+        "SCV-HH-84966",
+        "PRD-CAT-325",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-12-12",
+        0,
+        "\u00a34,500.02",
+        "\u00a3958.50",
+        "\u00a3958.50",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884167",
+        "SCV-HH-84967",
+        "PRD-CAT-326",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-10-19",
+        0,
+        "\u00a34,062.34",
+        "\u00a3487.48",
+        "\u00a3487.48",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884168",
+        "SCV-HH-84968",
+        "PRD-CAT-327",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-10-11",
+        0,
+        "\u00a34,211.83",
+        "\u00a3450.67",
+        "\u00a3450.67",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884169",
+        "SCV-HH-84969",
+        "PRD-CAT-328",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-11-23",
+        0,
+        "\u00a38,957.41",
+        "\u00a31,056.97",
+        "\u00a31,056.97",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884170",
+        "SCV-HH-84970",
+        "PRD-CAT-329",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-11-22",
+        0,
+        "\u00a34,205.48",
+        "\u00a3752.78",
+        "\u00a3752.78",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884171",
+        "SCV-HH-84971",
+        "PRD-CAT-330",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-11-17",
+        0,
+        "\u00a33,701.56",
+        "\u00a3858.76",
+        "\u00a3858.76",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884172",
+        "SCV-HH-84972",
+        "PRD-CAT-331",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-12-17",
+        0,
+        "\u00a39,189.28",
+        "\u00a3918.93",
+        "\u00a3918.93",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884173",
+        "SCV-HH-84973",
+        "PRD-CAT-332",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-10-24",
+        0,
+        "\u00a37,340.08",
+        "\u00a3741.35",
+        "\u00a3741.35",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884174",
+        "SCV-HH-84974",
+        "PRD-CAT-333",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-12-26",
+        0,
+        "\u00a35,557.88",
+        "\u00a3616.92",
+        "\u00a3616.92",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884175",
+        "SCV-HH-84975",
+        "PRD-CAT-334",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-12-25",
+        0,
+        "\u00a35,730.52",
+        "\u00a3951.27",
+        "\u00a3951.27",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884176",
+        "SCV-HH-84976",
+        "PRD-CAT-335",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-12-25",
+        0,
+        "\u00a37,037.94",
+        "\u00a31,569.46",
+        "\u00a31,569.46",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884177",
+        "SCV-HH-84977",
+        "PRD-CAT-336",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-10-19",
+        0,
+        "\u00a34,135.25",
+        "\u00a3454.88",
+        "\u00a3454.88",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884178",
+        "SCV-HH-84978",
+        "PRD-CAT-337",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-12-12",
+        0,
+        "\u00a33,423.97",
+        "\u00a3386.91",
+        "\u00a3386.91",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884179",
+        "SCV-HH-84979",
+        "PRD-CAT-338",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-12-14",
+        0,
+        "\u00a37,627.50",
+        "\u00a3747.50",
+        "\u00a3747.50",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884180",
+        "SCV-HH-84980",
+        "PRD-CAT-339",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-11-20",
+        0,
+        "\u00a36,415.32",
+        "\u00a31,148.34",
+        "\u00a31,148.34",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884181",
+        "SCV-HH-84981",
+        "PRD-CAT-340",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-10-23",
+        0,
+        "\u00a35,282.13",
+        "\u00a31,088.12",
+        "\u00a31,088.12",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884182",
+        "SCV-HH-84982",
+        "PRD-CAT-341",
+        "Vista_Desk",
+        "Quote_Open",
+        "2026-11-25",
+        0,
+        "\u00a32,443.63",
+        "\u00a3239.48",
+        "\u00a3239.48",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884183",
+        "SCV-HH-84983",
+        "PRD-CAT-342",
+        "Contact_Centre",
+        "Vista_Ticketing",
+        "2026-11-23",
+        0,
+        "\u00a36,382.83",
+        "\u00a3765.94",
+        "\u00a3765.94",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884184",
+        "SCV-HH-84984",
+        "PRD-CAT-343",
+        "Finance_iBOS",
+        "At_Risk_Cancellation",
+        "2026-10-18",
+        0,
+        "\u00a35,625.19",
+        "\u00a3601.90",
+        "\u00a3601.90",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ],
+      [
+        "HT-884185",
+        "SCV-HH-84985",
+        "PRD-CAT-344",
+        "Branch_Sales",
+        "Confirmed_DD",
+        "2026-11-22",
+        0,
+        "\u00a37,758.94",
+        "\u00a31,156.08",
+        "\u00a31,156.08",
+        "Matched \u2014 Verified against iBOS & Unity Catalog Gold"
+      ]
+    ]
+  },
+  "scans": [
+    {
+      "title": "Hays Travel Maidenhead (MAID-042) \u2014 Walk-In Extranet & Vista Booking Sheet",
+      "doc_no": "DOC-MAID-8841",
+      "date": "2026-09-30",
+      "headers": [
+        "Booking Ref",
+        "Household SCV",
+        "Product / Voyage Code",
+        "Entered Hotel / Cabin Text",
+        "Package TTV",
+        "Target Margin & Action"
+      ],
+      "rows": [
+        [
+          "HT-884120",
+          "SCV-HH-84920",
+          "PRD-B629C",
+          "P&O Arvia 14N Canary Islands Cab B-412 (90cm Scooter Door)",
+          "\u00a34,150.00",
+          "21.8% Vista Cruise-Stay (Verified)"
+        ],
+        [
+          "HT-884120",
+          "SCV-HH-84920",
+          "PRD-B629C",
+          "Travelport GDS Return Flights LGW-TFS + Private Transfers",
+          "\u00a31,120.00",
+          "Included in Vista ATOL Package"
+        ],
+        [
+          "HT-884120",
+          "SCV-HH-84920",
+          "PRD-B629C",
+          "Riu Palace Adeje Costa (TUI Extranet) [UNMAPPED MDM STRING]",
+          "\u00a31,180.00",
+          "DISCREPANCY: Map to ChIJN1t_tDeuEmsRUsoyG83frY4 & apply \u00a3174.36 Vista Margin Fix"
+        ],
+        [
+          "HT-884140",
+          "SCV-HH-84940",
+          "PRD-B629C",
+          "P&O Arvia Voyage B629C + Sunny Spend FX Card Attached",
+          "\u00a36,800.00",
+          "21.8% Margin (\u00a31,482.40) \u2014 Confirmed"
+        ]
+      ],
+      "is_discrepancy": true
+    },
+    {
+      "title": "Hays Travel PTC Lead Support \u2014 Amendment & Deferral Audit Escalation Slip",
+      "doc_no": "DOC-PTCLS-8849",
+      "date": "2026-09-30",
+      "headers": [
+        "Booking Ref",
+        "Household SCV",
+        "Product ID",
+        "Requested Amendment",
+        "Deferral Shift",
+        "Audit Genie Status"
+      ],
+      "rows": [
+        [
+          "HT-884130",
+          "SCV-HH-84930",
+          "PRD-VISTA-402",
+          "Vista Torremolinos Sol Principe Family Splash Quote",
+          "0 Months",
+          "Normal O2O Web Handover"
+        ],
+        [
+          "HT-884135",
+          "SCV-HH-84935",
+          "PRD-EZJ-204",
+          "Ikos Olivia Halkidiki Nut-Free Dining Confirmation",
+          "0 Months",
+          "Normal \u2014 DD Active"
+        ],
+        [
+          "HT-884105",
+          "SCV-HH-84905",
+          "PRD-IONA-711",
+          "Push Departure Date +12 Months to 2027-09-15 (No Cancellation)",
+          "+12 Months",
+          "DISCREPANCY: Artificial Bonus Protection Flag (DD Default_Risk)"
+        ],
+        [
+          "HT-884112",
+          "SCV-HH-84912",
+          "PRD-JET2-109",
+          "Push Departure Date +12 Months to 2027-10-04 (No Cancellation)",
+          "+12 Months",
+          "DISCREPANCY: Require Finance_iBOS Sign-Off"
+        ]
+      ],
+      "is_discrepancy": true
+    }
+  ]
+}

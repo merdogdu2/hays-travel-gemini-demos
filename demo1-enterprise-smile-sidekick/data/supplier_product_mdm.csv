@@ -1,0 +1,51 @@
+canonical_product_id,google_place_id,raw_isell_string_variants,canonical_name,supplier_channel,product_category,gross_margin_pct,min_margin_threshold_pct,verified_attributes
+PRD-B629C,ChIJN1t_tDeuEmsRUsoyG83frY4,142,P&O Arvia 14N Canary Islands (Voyage B629C) + Riu Palace Tenerife Vista Stay,Vista_InHouse,Cruise_And_Stay,21.8,18,Scooter_90cm_Door|Zero_Lifeboat_Obstruction|Midship_Lift_22m|Soft_Sand_Beach
+PRD-RIU-001,ChIJP3Sa8ziYEmsRUKgyFmh9AQM,189,Hotel Riu Palace Tenerife - Costa Adeje (3rd Party Land Only),TUI,Short_Haul_Beach,10.5,12,Standard_Balcony|Heated_Pool|Promenade_Access
+PRD-IONA-711,ChIJdd4hrwug2EcRmSrV3Vo6llI,94,P&O Iona 7N Norwegian Fjords (Voyage G614) Midship Conservatory Suite,PO_Cruises,Ocean_Cruise,16.4,15,Conservatory_Mini_Suite|Step_Free_Deck_8|Unobstructed_Sea_View
+PRD-VISTA-402,ChIJEcHIDqKw2YgRZU-t3XHylv8,167,Vista Torremolinos Sol Principe & Andalucia Fly-Drive Package,Vista_InHouse,Short_Haul_Beach,19.5,16,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-JET2-109,ChIJrTLr-GyuEmsRBfy61i59si0,215,Jet2holidays Constantinou Bros Athena Beach Hotel - Paphos,Jet2holidays,Short_Haul_Beach,11.0,12,Adults_Zone_Available|Walk_In_Shower|Flat_Promenade
+PRD-VISTA-808,ChIJ8UNwLh9YzBQRJ3a6815234A,112,Vista Singapore & Bali Twin-Centre Luxury Escape (Travelport GDS),Vista_InHouse,Long_Haul_MultiCentre,23.4,18,Private_Transfers|Lounge_Pass_Included|Guaranteed_Twin_Rooms
+PRD-EZJ-204,ChIJW-T2Wt7Gt4kRKl2I1CJFUsI,178,easyJet Holidays Ikos Olivia Resort - Halkidiki All-Inclusive,easyJet,Short_Haul_Beach,10.2,12,Nut_Free_Dining_Station|Creche_Available|Beachfront
+PRD-VISTA-901,ChIJ2eUgeAK6j4ARbn5u_wAGqWA,134,Vista Barbados & Royal Clipper Windward Islands Cruise-Stay,Vista_InHouse,Cruise_And_Stay,24.2,18,ATOL_Protected_Package|Boutique_Tall_Ship|Beachfront_Suite
+PRD-CAT-308,ChIJHaysPlaceMDM1008XYZ,225,TUI — H10 Rubicon Palace Lanzarote (Cruise And Stay),TUI,Cruise_And_Stay,11.7,12,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-309,ChIJHaysPlaceMDM1009XYZ,133,PO Cruises — Mitsis Alila Resort & Spa Faliraki (Ocean Cruise),PO_Cruises,Ocean_Cruise,16.9,15,ATOL_Protected_Package|Private_Transfers|Kids_Free_Place
+PRD-CAT-310,ChIJHaysPlaceMDM1010XYZ,64,Vista InHouse — Lopesan Costa Meloneras Gran Canaria (Cruise And Stay),Vista_InHouse,Cruise_And_Stay,18.8,18,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-311,ChIJHaysPlaceMDM1011XYZ,39,Jet2holidays — Princess Andriana Resort Rhodes (Ocean Cruise),Jet2holidays,Ocean_Cruise,11.2,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-312,ChIJHaysPlaceMDM1012XYZ,216,easyJet — Iberostar Selection Anthelia Tenerife (Cruise And Stay),easyJet,Cruise_And_Stay,10.6,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-313,ChIJHaysPlaceMDM1013XYZ,174,TUI — Grecotel LUXME White Palace Crete (Short Haul Beach),TUI,Short_Haul_Beach,10.9,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-314,ChIJHaysPlaceMDM1014XYZ,39,PO Cruises — Marella Explorer 2 Adriatic Wonders (Ocean Cruise),PO_Cruises,Ocean_Cruise,17.9,15,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-315,ChIJHaysPlaceMDM1015XYZ,72,Vista InHouse — P&O Britannia Caribbean Transatlantic (Ocean Cruise),Vista_InHouse,Ocean_Cruise,18.0,18,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-316,ChIJHaysPlaceMDM1016XYZ,197,Jet2holidays — Secrets Lanzarote Resort & Spa (Cruise And Stay),Jet2holidays,Cruise_And_Stay,11.9,12,ATOL_Protected_Package|Private_Transfers|Kids_Free_Place
+PRD-CAT-317,ChIJHaysPlaceMDM1017XYZ,55,easyJet — Domes of Elounda Autograph Collection (Short Haul Beach),easyJet,Short_Haul_Beach,12.1,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-318,ChIJHaysPlaceMDM1018XYZ,173,TUI — H10 Rubicon Palace Lanzarote (Long Haul MultiCentre),TUI,Long_Haul_MultiCentre,11.2,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-319,ChIJHaysPlaceMDM1019XYZ,132,PO Cruises — Mitsis Alila Resort & Spa Faliraki (Ocean Cruise),PO_Cruises,Ocean_Cruise,16.8,15,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-320,ChIJHaysPlaceMDM1020XYZ,91,Vista InHouse — Lopesan Costa Meloneras Gran Canaria (Cruise And Stay),Vista_InHouse,Cruise_And_Stay,18.9,18,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-321,ChIJHaysPlaceMDM1021XYZ,86,Jet2holidays — Princess Andriana Resort Rhodes (Short Haul Beach),Jet2holidays,Short_Haul_Beach,10.4,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-322,ChIJHaysPlaceMDM1022XYZ,196,easyJet — Iberostar Selection Anthelia Tenerife (Long Haul MultiCentre),easyJet,Long_Haul_MultiCentre,11.3,12,ATOL_Protected_Package|Private_Transfers|Kids_Free_Place
+PRD-CAT-323,ChIJHaysPlaceMDM1023XYZ,105,TUI — Grecotel LUXME White Palace Crete (Ocean Cruise),TUI,Ocean_Cruise,12.0,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-324,ChIJHaysPlaceMDM1024XYZ,27,PO Cruises — Marella Explorer 2 Adriatic Wonders (Ocean Cruise),PO_Cruises,Ocean_Cruise,16.1,15,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-325,ChIJHaysPlaceMDM1025XYZ,43,Vista InHouse — P&O Britannia Caribbean Transatlantic (Short Haul Beach),Vista_InHouse,Short_Haul_Beach,21.3,18,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-326,ChIJHaysPlaceMDM1026XYZ,58,Jet2holidays — Secrets Lanzarote Resort & Spa (Long Haul MultiCentre),Jet2holidays,Long_Haul_MultiCentre,12.0,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-327,ChIJHaysPlaceMDM1027XYZ,87,easyJet — Domes of Elounda Autograph Collection (Ocean Cruise),easyJet,Ocean_Cruise,10.7,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-328,ChIJHaysPlaceMDM1028XYZ,137,TUI — H10 Rubicon Palace Lanzarote (Cruise And Stay),TUI,Cruise_And_Stay,11.8,12,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-329,ChIJHaysPlaceMDM1029XYZ,181,PO Cruises — Mitsis Alila Resort & Spa Faliraki (Ocean Cruise),PO_Cruises,Ocean_Cruise,17.9,15,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-330,ChIJHaysPlaceMDM1030XYZ,195,Vista InHouse — Lopesan Costa Meloneras Gran Canaria (Cruise And Stay),Vista_InHouse,Cruise_And_Stay,23.2,18,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-331,ChIJHaysPlaceMDM1031XYZ,194,Jet2holidays — Princess Andriana Resort Rhodes (Ocean Cruise),Jet2holidays,Ocean_Cruise,10.0,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-332,ChIJHaysPlaceMDM1032XYZ,92,easyJet — Iberostar Selection Anthelia Tenerife (Cruise And Stay),easyJet,Cruise_And_Stay,10.1,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-333,ChIJHaysPlaceMDM1033XYZ,215,TUI — Grecotel LUXME White Palace Crete (Short Haul Beach),TUI,Short_Haul_Beach,11.1,12,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-334,ChIJHaysPlaceMDM1034XYZ,97,PO Cruises — Marella Explorer 2 Adriatic Wonders (Ocean Cruise),PO_Cruises,Ocean_Cruise,16.6,15,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-335,ChIJHaysPlaceMDM1035XYZ,77,Vista InHouse — P&O Britannia Caribbean Transatlantic (Ocean Cruise),Vista_InHouse,Ocean_Cruise,22.3,18,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-336,ChIJHaysPlaceMDM1036XYZ,154,Jet2holidays — Secrets Lanzarote Resort & Spa (Cruise And Stay),Jet2holidays,Cruise_And_Stay,11.0,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-337,ChIJHaysPlaceMDM1037XYZ,48,easyJet — Domes of Elounda Autograph Collection (Short Haul Beach),easyJet,Short_Haul_Beach,11.3,12,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-338,ChIJHaysPlaceMDM1038XYZ,36,TUI — H10 Rubicon Palace Lanzarote (Long Haul MultiCentre),TUI,Long_Haul_MultiCentre,9.8,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-339,ChIJHaysPlaceMDM1039XYZ,188,PO Cruises — Mitsis Alila Resort & Spa Faliraki (Ocean Cruise),PO_Cruises,Ocean_Cruise,17.9,15,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-340,ChIJHaysPlaceMDM1040XYZ,214,Vista InHouse — Lopesan Costa Meloneras Gran Canaria (Cruise And Stay),Vista_InHouse,Cruise_And_Stay,20.6,18,ATOL_Protected_Package|Private_Transfers|Kids_Free_Place
+PRD-CAT-341,ChIJHaysPlaceMDM1041XYZ,168,Jet2holidays — Princess Andriana Resort Rhodes (Short Haul Beach),Jet2holidays,Short_Haul_Beach,9.8,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-342,ChIJHaysPlaceMDM1042XYZ,201,easyJet — Iberostar Selection Anthelia Tenerife (Long Haul MultiCentre),easyJet,Long_Haul_MultiCentre,12.0,12,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-343,ChIJHaysPlaceMDM1043XYZ,238,TUI — Grecotel LUXME White Palace Crete (Ocean Cruise),TUI,Ocean_Cruise,10.7,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-344,ChIJHaysPlaceMDM1044XYZ,135,PO Cruises — Marella Explorer 2 Adriatic Wonders (Ocean Cruise),PO_Cruises,Ocean_Cruise,14.9,15,Adults_Only_Wing|Walk_In_Shower|Nut_Free_Dining
+PRD-CAT-345,ChIJHaysPlaceMDM1045XYZ,118,Vista InHouse — P&O Britannia Caribbean Transatlantic (Short Haul Beach),Vista_InHouse,Short_Haul_Beach,23.8,18,Soft_Sand_Beach|Interconnecting_Family_Rooms|Splash_Park
+PRD-CAT-346,ChIJHaysPlaceMDM1046XYZ,116,Jet2holidays — Secrets Lanzarote Resort & Spa (Long Haul MultiCentre),Jet2holidays,Long_Haul_MultiCentre,10.3,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-347,ChIJHaysPlaceMDM1047XYZ,195,easyJet — Domes of Elounda Autograph Collection (Ocean Cruise),easyJet,Ocean_Cruise,10.0,12,ATOL_Protected_Package|Private_Transfers|Kids_Free_Place
+PRD-CAT-348,ChIJHaysPlaceMDM1048XYZ,183,TUI — H10 Rubicon Palace Lanzarote (Cruise And Stay),TUI,Cruise_And_Stay,11.6,12,Scooter_90cm_Door|Step_Free_Access|Midship_Lift
+PRD-CAT-349,ChIJHaysPlaceMDM1049XYZ,66,PO Cruises — Mitsis Alila Resort & Spa Faliraki (Ocean Cruise),PO_Cruises,Ocean_Cruise,17.9,15,Scooter_90cm_Door|Step_Free_Access|Midship_Lift

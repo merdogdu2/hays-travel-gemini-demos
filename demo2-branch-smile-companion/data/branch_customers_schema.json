@@ -1,0 +1,74 @@
+[
+  {
+    "name": "customer_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key: Unified Branch Customer Household ID (e.g., CUST-101 for David & Sarah Henderson, CUST-102 for Emma & Tom Miller)."
+  },
+  {
+    "name": "branch_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Home Hays Travel retail branch (e.g., Maidenhead)."
+  },
+  {
+    "name": "customer_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Customer / couple display name."
+  },
+  {
+    "name": "postcode",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "UK postcode used for quick walk-in lookup."
+  },
+  {
+    "name": "party_summary",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Household composition and children's ages."
+  },
+  {
+    "name": "isell_duplicates_merged",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Number of duplicate legacy iSell profiles automatically combined into this single Customer Card."
+  },
+  {
+    "name": "lifetime_spend_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Total household holiday spend with Hays Travel in GBP (\u00a3)."
+  },
+  {
+    "name": "past_holidays_summary",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Concise summary of recent holidays booked with Hays Travel."
+  },
+  {
+    "name": "room_and_cabin_preferences",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Important cabin, room, beach, accessibility, and dietary preferences learned from past trips."
+  },
+  {
+    "name": "sunny_spend_fx_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hays Travel Sunny Spend travel money card status and FX upsell prompt."
+  },
+  {
+    "name": "holiday_extras_notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Preferred airport parking, lounge, and transfer add-ons."
+  },
+  {
+    "name": "open_quote_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Current walk-in inquiry or active quote status."
+  }
+]

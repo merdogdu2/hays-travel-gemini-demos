@@ -1,0 +1,92 @@
+[
+  {
+    "name": "package_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key: Cruise Voyage Code or Holiday Package Code (e.g., B629C, FAM-TOR-402, CRU-IONA-510)."
+  },
+  {
+    "name": "holiday_type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Category: Cruise & Stay, Family Beach, Accessible Cruise, Family Luxury Beach, Adult Winter Sun."
+  },
+  {
+    "name": "destination",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Destination country, island, or resort town."
+  },
+  {
+    "name": "ship_or_resort_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Clean canonical cruise ship and/or hotel resort name."
+  },
+  {
+    "name": "departure_airport_or_port",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "UK departure airport or cruise port."
+  },
+  {
+    "name": "duration_nights",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Holiday duration in nights."
+  },
+  {
+    "name": "room_or_cabin_highlights",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Detailed room/cabin attributes (interconnecting doors, soft sand, splash park, cabin deck, lift proximity, doorway width)."
+  },
+  {
+    "name": "veteran_tribal_tip",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "20-year veteran consultant insider tip (e.g., stony vs soft-sand beaches in Marbella vs Torremolinos, lifeboat obstructions on Arvia Deck 8)."
+  },
+  {
+    "name": "standard_supplier_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Standard 3rd-party tour operator (TUI, Jet2holidays, easyJet Holidays, P&O Direct)."
+  },
+  {
+    "name": "standard_supplier_price_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "3rd-party supplier total package price in GBP (\u00a3)."
+  },
+  {
+    "name": "standard_commission_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Branch commission earned on the 3rd-party supplier package (~10.5%) in GBP (\u00a3)."
+  },
+  {
+    "name": "vista_inhouse_price_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Hays Travel in-house Vista package price in GBP (\u00a3) \u2014 typically \u00a3130-\u00a3150 cheaper for the customer."
+  },
+  {
+    "name": "vista_branch_commission_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Branch commission earned on the in-house Vista package (~21.5%) in GBP (\u00a3)."
+  },
+  {
+    "name": "extra_branch_commission_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Extra commission in GBP (\u00a3) earned by the branch when choosing Vista over the 3rd-party supplier (+\u00a3678.07 on B629C)."
+  },
+  {
+    "name": "recommended_add_ons",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Recommended Holiday Extras (airport parking, lounge) and Sunny Spend FX card load."
+  }
+]

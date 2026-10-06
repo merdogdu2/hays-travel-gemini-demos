@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+*.log
+.agent_id
+.ge_direct_url
+.viewer_url
+.DS_Store

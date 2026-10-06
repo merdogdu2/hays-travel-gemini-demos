@@ -1,0 +1,240 @@
+{
+  "style": {
+    "label_issuer": "Hays Travel Retail Branch Network (Maidenhead)",
+    "label_doc_no": "Confirmation Ref",
+    "label_date": "Booking Date",
+    "approval_seal": "CONFIRMED",
+    "review_stamp": "READY FOR iSELL",
+    "label_review_note": "SMILE Sidekick Note: Scan this confirmation to auto-fill iSell in 1 click (saves 10 mins manual typing).",
+    "urgent_note": "Clean Canonical Hotel Name: Hotel Riu Palace Tenerife 5* (Costa Adeje) | Package Code: B629C",
+    "label_disclaimer": "{company} — Retail Branch Desk Copy (ATOL Protected)"
+  },
+  "pdf": {
+    "title": "Hays Travel Branch Desk Guide — Cruise, Beach & Vista Quick Reference",
+    "sections": [
+      {
+        "heading": "1. Veteran Consultant Destination & Cabin Tips (For All Branch Staff & Apprentices)",
+        "content": "When families ask for a soft-sand beach holiday on the Costa del Sol, remember that central Marbella beaches are stony—recommend Sol Principe Torremolinos (FAM-TOR-402 on Playamar beach) for wide, flat soft sand and a lagoon splash park. For P&O Arvia cruise bookings (Voyage Code B629C), avoid Deck 8 cabins 8201-8245 due to Promenade overhang and lifeboats; recommend Deck 12 Mid-Ship Balcony (Cabin B-12404) for unobstructed sea views and 30m proximity to the central lifts."
+      },
+      {
+        "heading": "2. Why Switch from 3rd-Party Suppliers to In-House Vista Packages?",
+        "content": "Standard 3rd-party packages (TUI, Jet2holidays, easyJet Holidays) pay roughly 10.5% branch commission. Switching to an equivalent Hays Travel in-house Vista package saves the customer £140-£150 on the total price while boosting branch commission to ~21.8% (+£678.07 extra commission on B629C and +£341.40 on FAM-TOR-402)."
+      },
+      {
+        "heading": "3. Don't Forget the 3 Golden Branch Add-Ons (Parking, Lounge & Sunny Spend FX)",
+        "content": "Before completing any booking in iSell, check the customer's Walk-In Card for Holiday Extras (Airport Meet & Greet Parking and Lounge passes) and issue or top up their Hays Travel Sunny Spend currency card."
+      }
+    ],
+    "discrepancy": {
+      "heading": "Top Branch Packages: 3rd-Party vs. Vista Price & Commission Cheat Sheet",
+      "table_data": [
+        [
+          "Package Code",
+          "Ship / Resort Name",
+          "3rd-Party Price (Comm)",
+          "Vista Price (Branch Comm)"
+        ],
+        [
+          "B629C",
+          "P&O Arvia 14N + Riu Palace Tenerife 5*",
+          "£6,290 (£660.45)",
+          "£6,140 (£1,338.52 / +£678.07)"
+        ],
+        [
+          "FAM-TOR-402",
+          "Sol Principe Torremolinos 4* (Family)",
+          "£3,390 (£339.00)",
+          "£3,240 (£680.40 / +£341.40)"
+        ],
+        [
+          "CRU-IONA-510",
+          "P&O Iona 7N Norwegian Fjords (Accessible)",
+          "£4,680 (£468.00)",
+          "£4,550 (£955.50 / +£487.50)"
+        ],
+        [
+          "FAM-HLK-902",
+          "Ikos Olivia 5* Halkidiki Deluxe Suite",
+          "£7,890 (£789.00)",
+          "£7,650 (£1,713.60 / +£924.60)"
+        ]
+      ]
+    }
+  },
+  "excel": {
+    "title": "Maidenhead Branch — Weekly Supplier Confirmation & iSell Auto-Fill Log",
+    "kpis": [
+      {
+        "label": "Walk-In Quotes This Week",
+        "value": "55"
+      },
+      {
+        "label": "Avg iSell Re-Key Time Saved",
+        "value": "9.5 mins / booking"
+      },
+      {
+        "label": "Extra Vista Commission Earned",
+        "value": "+£4,820"
+      }
+    ],
+    "headers": [
+      "Quote_Ref",
+      "Customer_ID",
+      "Package_Code",
+      "Supplier_Ref",
+      "Vista_Price_GBP",
+      "Branch_Comm_GBP"
+    ],
+    "rows": [
+      [
+        "QT-MAID-901",
+        "CUST-101",
+        "B629C",
+        "PO-CCS-62910",
+        6140.0,
+        1338.52
+      ],
+      [
+        "QT-MAID-902",
+        "CUST-102",
+        "FAM-TOR-402",
+        "JET2-884920",
+        3240.0,
+        680.4
+      ],
+      [
+        "QT-MAID-903",
+        "CUST-103",
+        "CRU-IONA-510",
+        "PO-CCS-77104",
+        4550.0,
+        955.5
+      ],
+      [
+        "QT-MAID-904",
+        "CUST-104",
+        "FAM-HLK-902",
+        "VISTA-99201",
+        7650.0,
+        1713.6
+      ],
+      [
+        "QT-MAID-905",
+        "CUST-105",
+        "ADU-LNZ-308",
+        "EZY-551902",
+        2760.0,
+        593.4
+      ]
+    ]
+  },
+  "scans": [
+    {
+      "title": "SUPPLIER BOOKING CONFIRMATION — READY FOR iSELL AUTO-FILL",
+      "doc_no": "DOC-BOOK-901 (Quote QT-MAID-901)",
+      "date": "2026-10-02",
+      "headers": [
+        "Item",
+        "Supplier / Extranet Details",
+        "Reference / Code",
+        "Price (GBP)",
+        "iSell Field Status"
+      ],
+      "rows": [
+        [
+          "1",
+          "Lead Pax: David & Sarah Henderson (2 Adults)",
+          "CUST-101",
+          "Included",
+          "Match Single Profile"
+        ],
+        [
+          "2",
+          "Flights: LGW-TFS Out 14 Nov 08:15 / Ret 28 Nov",
+          "PO-CCS-62910",
+          "Included",
+          "Auto-Fill Flight Legs"
+        ],
+        [
+          "3",
+          "Cruise: P&O Arvia 14N Canary Islands (Cabin B-12404)",
+          "B629C",
+          "£4,690.00",
+          "Deck 12 Mid-Ship Balcony"
+        ],
+        [
+          "4",
+          "Hotel: HTL RIU PALACE TENERIFE ADEJE 5* (3N Stay)",
+          "PRD-RIU-TFS",
+          "£1,450.00",
+          "Map -> Hotel Riu Palace Tenerife 5*"
+        ],
+        [
+          "5",
+          "Vista Package Total (Branch Comm: £1,338.52)",
+          "QT-MAID-901",
+          "£6,140.00",
+          "Ready for 1-Click Save"
+        ],
+        [
+          "6",
+          "Legacy Superseded Item",
+          "REF-999",
+          "1",
+          "Obsolete - check replacement"
+        ]
+      ],
+      "is_discrepancy": true
+    },
+    {
+      "title": "FAMILY BEACH QUOTE VOUCHER — MAIDENHEAD BRANCH",
+      "doc_no": "DOC-BOOK-902 (Quote QT-MAID-902)",
+      "date": "2026-10-02",
+      "headers": [
+        "Item",
+        "Supplier / Extranet Details",
+        "Reference / Code",
+        "Price (GBP)",
+        "iSell Field Status"
+      ],
+      "rows": [
+        [
+          "1",
+          "Lead Pax: Emma & Tom Miller (2A + 2C Ages 9, 6)",
+          "CUST-102",
+          "Included",
+          "Match Single Profile"
+        ],
+        [
+          "2",
+          "Flights: LGW-AGP LS1409 (Malaga Return)",
+          "JET2-884920",
+          "Included",
+          "Auto-Fill Flight Legs"
+        ],
+        [
+          "3",
+          "Resort: SOL PRINCIPE TORREMOLINOS PLAYAMAR 4*",
+          "FAM-TOR-402",
+          "£3,240.00",
+          "Map -> Sol Principe Torremolinos 4*"
+        ],
+        [
+          "4",
+          "Room: Guaranteed Interconnecting + Splash Park",
+          "QT-MAID-902",
+          "Included",
+          "Schedule 48-Hr Follow-Up"
+        ],
+        [
+          "5",
+          "Legacy Superseded Item",
+          "REF-999",
+          "1",
+          "Obsolete - check replacement"
+        ]
+      ],
+      "is_discrepancy": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+scv_household_id,primary_customer_name,isell_duplicate_count,experian_mosaic_tier,home_branch_code,lifetime_value_gbp,cancellation_risk_score,direct_debit_status,zero_deposit_segment
+SCV-HH-84920,David & Sarah Henderson,4,A03 Prestige Positions,MAID-042,18450.0,0.74,Retry_Pending,Net_Incremental
+SCV-HH-84905,Arthur & Brenda Pendelton,5,B07 Senior Security,MAID-042,24120.0,0.82,Default_Risk,High_Default_Risk
+SCV-HH-84912,Callum & Chloe MacLeod,3,G29 Domestic Success,SUND-001,12890.0,0.68,Retry_Pending,Net_Incremental
+SCV-HH-84919,Marcus & Priya Vance,4,A02 Uptown Elite,MAID-042,31500.0,0.79,Default_Risk,High_Default_Risk
+SCV-HH-84925,Eleanor & George Thornton,3,B05 Thriving Empty Nesters,CRUI-CC1,29400.0,0.12,Paid_Full,Standard
+SCV-HH-84930,Liam & Sophie O'Connor,2,H33 Family Basics,PTCLS-01,6420.0,0.66,Retry_Pending,Net_Incremental
+SCV-HH-84935,Tariq & Yasmin Al-Mansoor,4,A04 Suburban Stability,MAID-042,19800.0,0.18,Active,Net_Incremental
+SCV-HH-84940,Nigel & Fiona Sterling,5,B06 Boomerang Boarders,CRUI-CC1,22750.0,0.15,Paid_Full,Standard
+SCV-HH-84949,Alexander & Family Anderson,2,B05 Thriving Empty Nesters,MAID-042,5530.31,0.27,Active,Net_Incremental
+SCV-HH-84950,Grace & Family Reid,2,B06 Boomerang Boarders,SUND-001,24559.63,0.76,Retry_Pending,High_Default_Risk
+SCV-HH-84951,Samuel & Family Clark,2,B07 Senior Security,PTCLS-01,22042.38,0.08,Active,Net_Incremental
+SCV-HH-84952,Freya & Family Walker,3,G29 Domestic Success,CRUI-CC1,19556.37,0.07,Active,Standard
+SCV-HH-84953,Daniel & Family Watson,3,A04 Suburban Stability,NEWC-014,17916.9,0.27,Active,Net_Incremental
+SCV-HH-84954,Alice & Family Graham,5,H33 Family Basics,LEED-022,14735.32,0.17,Paid_Full,Net_Incremental
+SCV-HH-84955,Jack & Family Robertson,2,A03 Prestige Positions,MANC-019,15893.88,0.34,Paid_Full,Standard
+SCV-HH-84956,Lucy & Family MacDonald,2,B05 Thriving Empty Nesters,BIRM-031,26108.17,0.48,Paid_Full,Net_Incremental
+SCV-HH-84957,Thomas & Family Murray,4,B06 Boomerang Boarders,MAID-042,29018.62,0.54,Paid_Full,Net_Incremental
+SCV-HH-84958,Hannah & Family Mitchell,2,B07 Senior Security,SUND-001,6138.07,0.23,Paid_Full,Net_Incremental
+SCV-HH-84959,Rory & Family Paterson,3,G29 Domestic Success,PTCLS-01,30101.32,0.35,Paid_Full,Standard
+SCV-HH-84960,Eilidh & Family Morrison,3,A04 Suburban Stability,CRUI-CC1,15609.28,0.22,Paid_Full,Net_Incremental
+SCV-HH-84961,James & Family Campbell,3,H33 Family Basics,NEWC-014,20396.88,0.25,Paid_Full,Standard
+SCV-HH-84962,Emma & Family Thomson,4,A03 Prestige Positions,LEED-022,33694.08,0.56,Active,Standard
+SCV-HH-84963,Oliver & Family Scott,2,B05 Thriving Empty Nesters,MANC-019,11488.2,0.08,Paid_Full,Standard
+SCV-HH-84964,Charlotte & Family Taylor,4,B06 Boomerang Boarders,BIRM-031,6732.71,0.78,Retry_Pending,High_Default_Risk
+SCV-HH-84965,William & Family Ross,4,B07 Senior Security,MAID-042,11008.7,0.45,Paid_Full,Net_Incremental
+SCV-HH-84966,Amelia & Family Young,4,G29 Domestic Success,SUND-001,8877.21,0.65,Paid_Full,Standard
+SCV-HH-84967,Henry & Family Fraser,5,A04 Suburban Stability,PTCLS-01,15370.3,0.85,Retry_Pending,High_Default_Risk
+SCV-HH-84968,Islay & Family Stewart,3,H33 Family Basics,CRUI-CC1,19678.17,0.12,Active,Net_Incremental
+SCV-HH-84969,Alexander & Family Anderson,3,A03 Prestige Positions,NEWC-014,23121.42,0.68,Retry_Pending,Standard
+SCV-HH-84970,Grace & Family Reid,2,B05 Thriving Empty Nesters,LEED-022,16035.21,0.53,Paid_Full,Standard
+SCV-HH-84971,Samuel & Family Clark,2,B06 Boomerang Boarders,MANC-019,24664.28,0.14,Paid_Full,Standard
+SCV-HH-84972,Freya & Family Walker,2,B07 Senior Security,BIRM-031,13370.2,0.18,Active,Standard
+SCV-HH-84973,Daniel & Family Watson,3,G29 Domestic Success,MAID-042,19624.3,0.14,Paid_Full,Net_Incremental
+SCV-HH-84974,Alice & Family Graham,3,A04 Suburban Stability,SUND-001,15718.28,0.18,Active,Standard
+SCV-HH-84975,Jack & Family Robertson,5,H33 Family Basics,PTCLS-01,5368.72,0.79,Retry_Pending,High_Default_Risk
+SCV-HH-84976,Lucy & Family MacDonald,4,A03 Prestige Positions,CRUI-CC1,11792.01,0.24,Active,Net_Incremental
+SCV-HH-84977,Thomas & Family Murray,5,B05 Thriving Empty Nesters,NEWC-014,28627.88,0.83,Retry_Pending,High_Default_Risk
+SCV-HH-84978,Hannah & Family Mitchell,3,B06 Boomerang Boarders,LEED-022,8549.03,0.43,Active,Standard
+SCV-HH-84979,Rory & Family Paterson,5,B07 Senior Security,MANC-019,32959.4,0.79,Retry_Pending,High_Default_Risk
+SCV-HH-84980,Eilidh & Family Morrison,3,G29 Domestic Success,BIRM-031,25618.11,0.37,Paid_Full,Standard
+SCV-HH-84981,James & Family Campbell,5,A04 Suburban Stability,MAID-042,8333.32,0.23,Paid_Full,Net_Incremental
+SCV-HH-84982,Emma & Family Thomson,3,H33 Family Basics,SUND-001,21982.45,0.06,Active,Net_Incremental
+SCV-HH-84983,Oliver & Family Scott,2,A03 Prestige Positions,PTCLS-01,31238.26,0.74,Retry_Pending,High_Default_Risk
+SCV-HH-84984,Charlotte & Family Taylor,2,B05 Thriving Empty Nesters,CRUI-CC1,19813.36,0.27,Paid_Full,Net_Incremental
+SCV-HH-84985,William & Family Ross,3,B06 Boomerang Boarders,NEWC-014,25921.89,0.76,Retry_Pending,High_Default_Risk
+SCV-HH-84986,Amelia & Family Young,5,B07 Senior Security,LEED-022,11895.52,0.43,Paid_Full,Net_Incremental
+SCV-HH-84987,Henry & Family Fraser,2,G29 Domestic Success,MANC-019,7630.38,0.39,Paid_Full,Standard
+SCV-HH-84988,Islay & Family Stewart,5,A04 Suburban Stability,BIRM-031,30024.03,0.09,Active,Net_Incremental
+SCV-HH-84989,Alexander & Family Anderson,5,H33 Family Basics,MAID-042,26063.84,0.69,Retry_Pending,Net_Incremental
+SCV-HH-84990,Grace & Family Reid,3,A03 Prestige Positions,SUND-001,10394.43,0.48,Active,Standard
+SCV-HH-84991,Samuel & Family Clark,3,B05 Thriving Empty Nesters,PTCLS-01,12933.52,0.25,Active,Standard
+SCV-HH-84992,Freya & Family Walker,2,B06 Boomerang Boarders,CRUI-CC1,6277.18,0.85,Retry_Pending,High_Default_Risk
+SCV-HH-84993,Daniel & Family Watson,2,B07 Senior Security,NEWC-014,33094.69,0.79,Retry_Pending,High_Default_Risk
+SCV-HH-84994,Alice & Family Graham,3,G29 Domestic Success,LEED-022,9656.28,0.44,Active,Standard
+SCV-HH-84995,Jack & Family Robertson,2,A04 Suburban Stability,MANC-019,9607.4,0.05,Paid_Full,Standard

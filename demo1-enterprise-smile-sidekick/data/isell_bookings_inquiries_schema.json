@@ -1,0 +1,74 @@
+[
+  {
+    "name": "booking_ref",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Primary Key. Traveltek iSell / iBOS booking or inquiry reference (e.g. HT-884120)."
+  },
+  {
+    "name": "scv_household_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Foreign Key to gold_customer_scv.scv_household_id."
+  },
+  {
+    "name": "canonical_product_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Foreign Key to supplier_product_mdm.canonical_product_id."
+  },
+  {
+    "name": "raw_entered_hotel_text",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Raw free-text hotel/resort string typed manually into iSell by the consultant from supplier extranet."
+  },
+  {
+    "name": "owning_department",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Department currently owning the record: Branch_Sales, Vista_Desk, Contact_Centre, or Finance_iBOS."
+  },
+  {
+    "name": "booking_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Operational state: Quote_Open, Confirmed_DD, At_Risk_Cancellation, Deferred_Audit_Flag, Vista_Ticketing."
+  },
+  {
+    "name": "booking_created_date",
+    "type": "DATE",
+    "mode": "NULLABLE",
+    "description": "Date the inquiry or booking was logged in Traveltek iSell (YYYY-MM-DD)."
+  },
+  {
+    "name": "departure_date",
+    "type": "DATE",
+    "mode": "NULLABLE",
+    "description": "Scheduled passenger departure date (YYYY-MM-DD)."
+  },
+  {
+    "name": "deferral_months_shifted",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Number of months departure date was pushed out (12 indicates Audit Genie flag for artificial bonus protection)."
+  },
+  {
+    "name": "total_package_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Total booking transaction value (TTV) in GBP."
+  },
+  {
+    "name": "expected_margin_gbp",
+    "type": "FLOAT",
+    "mode": "NULLABLE",
+    "description": "Expected gross margin or commission in GBP recorded in iSell."
+  },
+  {
+    "name": "fx_sunny_spend_attached",
+    "type": "BOOLEAN",
+    "mode": "NULLABLE",
+    "description": "Whether Hays Travel's in-house TPF Sunny Spend FX card is attached to the booking."
+  }
+]

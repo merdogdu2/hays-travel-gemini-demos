@@ -1,0 +1,1 @@
+One row per Traveltek iSell / iBOS booking or open customer inquiry across Retail Branches, Contact Centre (PTC LS / Cruise CC), Vista Packaging Desk, and Finance iBOS settlement. Rows: 65. Coverage: `booking_created_date` 2026-06-10 -> 2026-09-28; `departure_date` 2026-10-11 -> 2027-11-12
